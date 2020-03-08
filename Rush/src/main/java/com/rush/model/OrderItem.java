@@ -5,6 +5,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
@@ -14,82 +16,23 @@ public class OrderItem {
 	//Table columns
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	@Column(name="order_items")
-	private Long orderItems;
+	@Column(name="order_items_id")
+	private Long orderItemsId;
 	
-	@Column(name="order_id")
-	private Long orderId;
-	
-	@Column(name="product_id")
-	private Long productId;
-	
-	@Column(name="product_id")
+	@Column(name="quantity")
 	private Integer quantity;
 	
 	@Column(name="item_price")
 	private Integer itemPrice;
 
+	@ManyToOne
+	@JoinColumn(name="order_id")
+	private Order order;
+	
+	@ManyToOne
+	@JoinColumn(name="product_id")
+	private Product product;
+	
 	
 	//Getters and Setters
-	public Long getOrderItems() {
-		return orderItems;
-	}
-
-	public void setOrderItems(Long orderItems) {
-		this.orderItems = orderItems;
-	}
-
-	public Long getOrderId() {
-		return orderId;
-	}
-
-	public void setOrderId(Long orderId) {
-		this.orderId = orderId;
-	}
-
-	public Long getProductId() {
-		return productId;
-	}
-
-	public void setProductId(Long productId) {
-		this.productId = productId;
-	}
-
-	public Integer getQuantity() {
-		return quantity;
-	}
-
-	public void setQuantity(Integer quantity) {
-		this.quantity = quantity;
-	}
-
-	public Integer getItemPrice() {
-		return itemPrice;
-	}
-
-	public void setItemPrice(Integer itemPrice) {
-		this.itemPrice = itemPrice;
-	}
-
-	@Override
-	public String toString() {
-		return "OrderItem [orderItems=" + orderItems + ", orderId=" + orderId + ", productId=" + productId
-				+ ", quantity=" + quantity + ", itemPrice=" + itemPrice + "]";
-	}
-
-	public OrderItem(Long orderItems, Long orderId, Long productId, Integer quantity, Integer itemPrice) {
-		super();
-		this.orderItems = orderItems;
-		this.orderId = orderId;
-		this.productId = productId;
-		this.quantity = quantity;
-		this.itemPrice = itemPrice;
-	}
-
-	public OrderItem() {
-	}
-	
-
-	
-	
 }
