@@ -1,10 +1,14 @@
 package com.rush.model;
 
+import java.util.List;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
@@ -20,37 +24,10 @@ public class DessertCategory {
 	@Column(name="category_name")
 	private String categoryName;
 
+	@OneToMany
+	@JoinColumn(name="dessert_category_id")
+	private List<Product> products;
+	
 	
 	//Getters and Setters
-	public Long getDessertCategoryId() {
-		return dessertCategoryId;
-	}
-
-	public void setDessertCategoryId(Long dessertCategoryId) {
-		this.dessertCategoryId = dessertCategoryId;
-	}
-
-	public String getCategoryName() {
-		return categoryName;
-	}
-
-	public void setCategoryName(String categoryName) {
-		this.categoryName = categoryName;
-	}
-
-	@Override
-	public String toString() {
-		return "DessertCategory [dessertCategoryId=" + dessertCategoryId + ", categoryName=" + categoryName + "]";
-	}
-
-	public DessertCategory(Long dessertCategoryId, String categoryName) {
-		super();
-		this.dessertCategoryId = dessertCategoryId;
-		this.categoryName = categoryName;
-	}
-
-	public DessertCategory() {
-	}
-	
-	
 }

@@ -8,6 +8,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
@@ -42,6 +43,15 @@ public class Product {
 	@OneToMany
 	@JoinColumn(name="product_id")
 	private List<OrderItem> orderItems;
+	
+	@OneToMany
+	@JoinColumn(name ="dietary_join_id")
+	private List<DietaryJoin> dietaryJoins;
+	
+	@ManyToOne
+	@JoinColumn(name="dessert_category_id")
+	private DessertCategory dessertCategory;
+	
 	
 	//Getters and Setters
 	}
