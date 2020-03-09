@@ -1,10 +1,14 @@
 package com.rush.model;
 
+import java.util.List;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
@@ -19,7 +23,10 @@ public class DietaryCategory {
 	
 	@Column(name="dietary_name")
 	private Long dietaryName;
-
+	
+	@OneToMany
+	@JoinColumn(name="dietary_category_id")
+	private List<DietaryJoin> dietaryJoins;
 	
 	//Getters and Setters
 	public Long getDietaryCategoryId() {
