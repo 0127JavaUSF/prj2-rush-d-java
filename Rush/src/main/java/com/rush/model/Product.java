@@ -28,24 +28,21 @@ public class Product {
 	@Column(name="product_price")
 	private Integer productPrice;
 	
-	@Column(name="production_description")
+	@Column(name="product_description")
 	private String productDescription;
 	
 	@Column(name="quantity_rem")
 	private Integer quantityRem;
 	
-	@Column(name="category_id")
-	private Long categoryId;
-	
-	@Column(name="ingredients")
-	private String ingredients;
+	@Column(name="img_url")
+	private String imgUrl;
 	
 	@OneToMany
 	@JoinColumn(name="product_id")
 	private List<OrderItem> orderItems;
 	
 	@OneToMany
-	@JoinColumn(name ="dietary_join_id")
+	@JoinColumn(name="product_id")
 	private List<DietaryJoin> dietaryJoins;
 	
 	@ManyToOne
@@ -53,7 +50,7 @@ public class Product {
 	private DessertCategory dessertCategory;
 
 	
-	//Getters and Setters
+	//getters and setters
 	public Long getProductId() {
 		return productId;
 	}
@@ -94,20 +91,12 @@ public class Product {
 		this.quantityRem = quantityRem;
 	}
 
-	public Long getCategoryId() {
-		return categoryId;
+	public String getImgUrl() {
+		return imgUrl;
 	}
 
-	public void setCategoryId(Long categoryId) {
-		this.categoryId = categoryId;
-	}
-
-	public String getIngredients() {
-		return ingredients;
-	}
-
-	public void setIngredients(String ingredients) {
-		this.ingredients = ingredients;
+	public void setImgUrl(String imgUrl) {
+		this.imgUrl = imgUrl;
 	}
 
 	public List<OrderItem> getOrderItems() {
@@ -134,47 +123,13 @@ public class Product {
 		this.dessertCategory = dessertCategory;
 	}
 
-	
-	//constructors
-	public Product(Long productId, String productName, Integer productPrice, String productDescription,
-			Integer quantityRem, Long categoryId, String ingredients, List<OrderItem> orderItems,
-			List<DietaryJoin> dietaryJoins, DessertCategory dessertCategory) {
-		super();
-		this.productId = productId;
-		this.productName = productName;
-		this.productPrice = productPrice;
-		this.productDescription = productDescription;
-		this.quantityRem = quantityRem;
-		this.categoryId = categoryId;
-		this.ingredients = ingredients;
-		this.orderItems = orderItems;
-		this.dietaryJoins = dietaryJoins;
-		this.dessertCategory = dessertCategory;
-	}
-
-	public Product() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
-
-	
-	//to string
-	@Override
-	public String toString() {
-		return "Product [productId=" + productId + ", productName=" + productName + ", productPrice=" + productPrice
-				+ ", productDescription=" + productDescription + ", quantityRem=" + quantityRem + ", categoryId="
-				+ categoryId + ", ingredients=" + ingredients + ", orderItems=" + orderItems + ", dietaryJoins="
-				+ dietaryJoins + ", dessertCategory=" + dessertCategory + "]";
-	}
-
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + ((categoryId == null) ? 0 : categoryId.hashCode());
 		result = prime * result + ((dessertCategory == null) ? 0 : dessertCategory.hashCode());
 		result = prime * result + ((dietaryJoins == null) ? 0 : dietaryJoins.hashCode());
-		result = prime * result + ((ingredients == null) ? 0 : ingredients.hashCode());
+		result = prime * result + ((imgUrl == null) ? 0 : imgUrl.hashCode());
 		result = prime * result + ((orderItems == null) ? 0 : orderItems.hashCode());
 		result = prime * result + ((productDescription == null) ? 0 : productDescription.hashCode());
 		result = prime * result + ((productId == null) ? 0 : productId.hashCode());
@@ -184,8 +139,6 @@ public class Product {
 		return result;
 	}
 
-	
-	//hashcode and equals
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -195,11 +148,6 @@ public class Product {
 		if (getClass() != obj.getClass())
 			return false;
 		Product other = (Product) obj;
-		if (categoryId == null) {
-			if (other.categoryId != null)
-				return false;
-		} else if (!categoryId.equals(other.categoryId))
-			return false;
 		if (dessertCategory == null) {
 			if (other.dessertCategory != null)
 				return false;
@@ -210,10 +158,10 @@ public class Product {
 				return false;
 		} else if (!dietaryJoins.equals(other.dietaryJoins))
 			return false;
-		if (ingredients == null) {
-			if (other.ingredients != null)
+		if (imgUrl == null) {
+			if (other.imgUrl != null)
 				return false;
-		} else if (!ingredients.equals(other.ingredients))
+		} else if (!imgUrl.equals(other.imgUrl))
 			return false;
 		if (orderItems == null) {
 			if (other.orderItems != null)
@@ -247,14 +195,36 @@ public class Product {
 			return false;
 		return true;
 	}
+
+	@Override
+	public String toString() {
+		return "Product [productId=" + productId + ", productName=" + productName + ", productPrice=" + productPrice
+				+ ", productDescription=" + productDescription + ", quantityRem=" + quantityRem + ", imgUrl=" + imgUrl
+				+ ", orderItems=" + orderItems + ", dietaryJoins=" + dietaryJoins + ", dessertCategory="
+				+ dessertCategory + "]";
+	}
+
+	public Product(Long productId, String productName, Integer productPrice, String productDescription,
+			Integer quantityRem, String imgUrl, List<OrderItem> orderItems, List<DietaryJoin> dietaryJoins,
+			DessertCategory dessertCategory) {
+		super();
+		this.productId = productId;
+		this.productName = productName;
+		this.productPrice = productPrice;
+		this.productDescription = productDescription;
+		this.quantityRem = quantityRem;
+		this.imgUrl = imgUrl;
+		this.orderItems = orderItems;
+		this.dietaryJoins = dietaryJoins;
+		this.dessertCategory = dessertCategory;
+	}
+
+	public Product() {
+
+	}
+
 	
-	
-	
-	
-	
-	
-	
-	
+
 	
 	
 }
