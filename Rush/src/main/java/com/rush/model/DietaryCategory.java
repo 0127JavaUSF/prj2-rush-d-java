@@ -22,13 +22,14 @@ public class DietaryCategory {
 	private Long dietaryCategoryId;
 	
 	@Column(name="dietary_name")
-	private Long dietaryName;
+	private String dietaryName;
 	
 	@OneToMany
 	@JoinColumn(name="dietary_category_id")
 	private List<DietaryJoin> dietaryJoins;
+
 	
-	//Getters and Setters
+	//getters and setters
 	public Long getDietaryCategoryId() {
 		return dietaryCategoryId;
 	}
@@ -37,33 +38,41 @@ public class DietaryCategory {
 		this.dietaryCategoryId = dietaryCategoryId;
 	}
 
-	public Long getDietaryName() {
+	public String getDietaryName() {
 		return dietaryName;
 	}
 
-	public void setDietaryName(Long dietaryName) {
+	public void setDietaryName(String dietaryName) {
 		this.dietaryName = dietaryName;
 	}
 
+	public List<DietaryJoin> getDietaryJoins() {
+		return dietaryJoins;
+	}
+
+	public void setDietaryJoins(List<DietaryJoin> dietaryJoins) {
+		this.dietaryJoins = dietaryJoins;
+	}
+
 	//constructors
-	public DietaryCategory(Long dietaryCategoryId, Long dietaryName) {
+	public DietaryCategory(Long dietaryCategoryId, String dietaryName, List<DietaryJoin> dietaryJoins) {
 		super();
 		this.dietaryCategoryId = dietaryCategoryId;
 		this.dietaryName = dietaryName;
+		this.dietaryJoins = dietaryJoins;
 	}
 
 	public DietaryCategory() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	//to string
 	@Override
 	public String toString() {
-		return "DietaryCategory [dietaryCategoryId=" + dietaryCategoryId + ", dietaryName=" + dietaryName + "]";
+		return "DietaryCategory [dietaryCategoryId=" + dietaryCategoryId + ", dietaryName=" + dietaryName
+				+ ", dietaryJoins=" + dietaryJoins + "]";
 	}
 
-	
 	//hashcode and equals
 	@Override
 	public int hashCode() {
@@ -101,6 +110,18 @@ public class DietaryCategory {
 			return false;
 		return true;
 	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
