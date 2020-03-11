@@ -2,6 +2,7 @@ package com.rush.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -9,8 +10,14 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonIdentityInfo;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.ObjectIdGenerators;
+
 @Entity
 @Table(name="dietary_join")
+@JsonIdentityInfo(generator=ObjectIdGenerators.IntSequenceGenerator.class, property="dietaryJoinJsonId")
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class DietaryJoin {
 	
 	//Table column
@@ -19,11 +26,11 @@ public class DietaryJoin {
 	@Column(name="dietary_join_id")
 	private Long dietaryJoinId;
 	
-	@ManyToOne
+	@ManyToOne(fetch=FetchType.LAZY)
 	@JoinColumn(name="product_id")
 	private Product product;
 	
-	@ManyToOne
+	@ManyToOne(fetch=FetchType.LAZY)
 	@JoinColumn(name="dietary_category_id")
 	private DietaryCategory dietaryCategory;
 

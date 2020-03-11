@@ -4,6 +4,7 @@ import java.util.List;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -12,8 +13,14 @@ import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonIdentityInfo;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.ObjectIdGenerators;
+
 @Entity
 @Table(name="products")
+@JsonIdentityInfo(generator=ObjectIdGenerators.IntSequenceGenerator.class, property="productJsonId")
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class Product {
 
 	//Table columns
@@ -45,7 +52,7 @@ public class Product {
 	@JoinColumn(name="product_id")
 	private List<DietaryJoin> dietaryJoins;
 	
-	@ManyToOne
+	@ManyToOne(fetch=FetchType.LAZY)
 	@JoinColumn(name="dessert_category_id")
 	private DessertCategory dessertCategory;
 
@@ -123,87 +130,6 @@ public class Product {
 		this.dessertCategory = dessertCategory;
 	}
 
-	@Override
-	public int hashCode() {
-		final int prime = 31;
-		int result = 1;
-		result = prime * result + ((dessertCategory == null) ? 0 : dessertCategory.hashCode());
-		result = prime * result + ((dietaryJoins == null) ? 0 : dietaryJoins.hashCode());
-		result = prime * result + ((imgUrl == null) ? 0 : imgUrl.hashCode());
-		result = prime * result + ((orderItems == null) ? 0 : orderItems.hashCode());
-		result = prime * result + ((productDescription == null) ? 0 : productDescription.hashCode());
-		result = prime * result + ((productId == null) ? 0 : productId.hashCode());
-		result = prime * result + ((productName == null) ? 0 : productName.hashCode());
-		result = prime * result + ((productPrice == null) ? 0 : productPrice.hashCode());
-		result = prime * result + ((quantityRem == null) ? 0 : quantityRem.hashCode());
-		return result;
-	}
-
-	@Override
-	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (obj == null)
-			return false;
-		if (getClass() != obj.getClass())
-			return false;
-		Product other = (Product) obj;
-		if (dessertCategory == null) {
-			if (other.dessertCategory != null)
-				return false;
-		} else if (!dessertCategory.equals(other.dessertCategory))
-			return false;
-		if (dietaryJoins == null) {
-			if (other.dietaryJoins != null)
-				return false;
-		} else if (!dietaryJoins.equals(other.dietaryJoins))
-			return false;
-		if (imgUrl == null) {
-			if (other.imgUrl != null)
-				return false;
-		} else if (!imgUrl.equals(other.imgUrl))
-			return false;
-		if (orderItems == null) {
-			if (other.orderItems != null)
-				return false;
-		} else if (!orderItems.equals(other.orderItems))
-			return false;
-		if (productDescription == null) {
-			if (other.productDescription != null)
-				return false;
-		} else if (!productDescription.equals(other.productDescription))
-			return false;
-		if (productId == null) {
-			if (other.productId != null)
-				return false;
-		} else if (!productId.equals(other.productId))
-			return false;
-		if (productName == null) {
-			if (other.productName != null)
-				return false;
-		} else if (!productName.equals(other.productName))
-			return false;
-		if (productPrice == null) {
-			if (other.productPrice != null)
-				return false;
-		} else if (!productPrice.equals(other.productPrice))
-			return false;
-		if (quantityRem == null) {
-			if (other.quantityRem != null)
-				return false;
-		} else if (!quantityRem.equals(other.quantityRem))
-			return false;
-		return true;
-	}
-
-	@Override
-	public String toString() {
-		return "Product [productId=" + productId + ", productName=" + productName + ", productPrice=" + productPrice
-				+ ", productDescription=" + productDescription + ", quantityRem=" + quantityRem + ", imgUrl=" + imgUrl
-				+ ", orderItems=" + orderItems + ", dietaryJoins=" + dietaryJoins + ", dessertCategory="
-				+ dessertCategory + "]";
-	}
-
 	public Product(Long productId, String productName, Integer productPrice, String productDescription,
 			Integer quantityRem, String imgUrl, List<OrderItem> orderItems, List<DietaryJoin> dietaryJoins,
 			DessertCategory dessertCategory) {
@@ -220,11 +146,13 @@ public class Product {
 	}
 
 	public Product() {
-
+		super();
+		// TODO Auto-generated constructor stub
 	}
 
 	
 
-	
+
+
 	
 }
