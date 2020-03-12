@@ -4,18 +4,17 @@ import java.util.HashMap;
 import java.util.Map;
 
 import javax.servlet.http.Cookie;
-import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CookieValue;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
-
 
 //import com.rush.exception.ValidateSessionException;
 import com.rush.model.Customer;
@@ -24,6 +23,8 @@ import com.rush.service.LoginService;
 import com.rush.utils.CustomerJWTUtil;
 import com.rush.utils.JWTAuthService;
 
+
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 @RestController
 public class LoginController {
 	@Autowired
@@ -37,9 +38,11 @@ public class LoginController {
 	public ResponseEntity sessionProcess(@CookieValue(value = "JWT", defaultValue="noCookie") String jwt){
 		try {
 			if (!(CustomerJWTUtil.getCustIdOrNull(jwt).equals(null))) {
+				Map<String, String> responsebody = new HashMap();
+				responsebody.put("Session", "User has active session");
 				return ResponseEntity
 						.status(200)
-						.body("User has been verified");
+						.body(responsebody);
 				
 			}
 		}
@@ -74,9 +77,11 @@ public class LoginController {
 	    		String token = jwtService.generateToken(customer.getCustId());
 	    		Cookie cookie = new Cookie("JWT", token);
 	    		response.addCookie(cookie);
+	    		Map<String, String> responsebody = new HashMap();
+				responsebody.put("Response", "User has been verified");
 	    		return ResponseEntity
 	    				.status(201)
-	    				.body("Token has been set");//TODO return userID for client-side use
+	    				.body(responsebody);//TODO return userID for client-side use
 	    	}
 
 		}
