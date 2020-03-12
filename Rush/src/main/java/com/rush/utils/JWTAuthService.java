@@ -47,6 +47,10 @@ public class JWTAuthService {
 			return false;
 		    //Invalid signature/claims
 		}
+		catch(Exception e) {
+			System.out.println("catch any other garbage when trying to verify token");
+			return false;
+		}
 		
 	}
 

@@ -41,13 +41,8 @@ public class Product {
 	@Column(name="quantity_rem")
 	private Integer quantityRem;
 	
-<<<<<<< HEAD
-	@Column(name="ingredients")
-	private String ingredients;
-=======
 	@Column(name="img_url")
 	private String imgUrl;
->>>>>>> b974b7837c3e6f25cb19d415a852c17e118f2012
 	
 	@OneToMany
 	@JoinColumn(name="product_id")
@@ -103,23 +98,12 @@ public class Product {
 		this.quantityRem = quantityRem;
 	}
 
-<<<<<<< HEAD
-
-
-	public String getIngredients() {
-		return ingredients;
-	}
-
-	public void setIngredients(String ingredients) {
-		this.ingredients = ingredients;
-=======
 	public String getImgUrl() {
 		return imgUrl;
 	}
 
 	public void setImgUrl(String imgUrl) {
 		this.imgUrl = imgUrl;
->>>>>>> b974b7837c3e6f25cb19d415a852c17e118f2012
 	}
 
 	public List<OrderItem> getOrderItems() {
@@ -146,18 +130,6 @@ public class Product {
 		this.dessertCategory = dessertCategory;
 	}
 
-<<<<<<< HEAD
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-=======
 	public Product(Long productId, String productName, Integer productPrice, String productDescription,
 			Integer quantityRem, String imgUrl, List<OrderItem> orderItems, List<DietaryJoin> dietaryJoins,
 			DessertCategory dessertCategory) {
@@ -182,6 +154,5 @@ public class Product {
 
 
 
->>>>>>> b974b7837c3e6f25cb19d415a852c17e118f2012
 	
 }

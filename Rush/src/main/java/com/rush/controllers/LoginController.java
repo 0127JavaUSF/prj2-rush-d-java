@@ -36,7 +36,7 @@ public class LoginController {
 	@GetMapping(value = "/session", produces = "application/json")//used for NgOninit to auto-redirect a user if they're already logged in
 	public ResponseEntity sessionProcess(@CookieValue(value = "JWT", defaultValue="noCookie") String jwt){
 		try {
-			if (!(CustomerJWTUtil.getUsrOrInvalid(jwt).equals(null))) {
+			if (!(CustomerJWTUtil.getCustIdOrNull(jwt).equals(null))) {
 				return ResponseEntity
 						.status(200)
 						.body("User has been verified");
