@@ -10,7 +10,7 @@ import com.auth0.jwt.exceptions.JWTCreationException;
 import com.auth0.jwt.exceptions.JWTVerificationException;
 import com.auth0.jwt.interfaces.DecodedJWT;
 
-@SpringBootApplication(scanBasePackages = {"com.rush.controllers", "com.rush.model", "com.rush.repos", "com.rush.service", "com.rush.repos","com.rush.utils"})
+@SpringBootApplication//(scanBasePackages = {"com.rush.controllers", "com.rush.model", "com.rush.repos", "com.rush.service", "com.rush.repos","com.rush.utils"})
 public class RushApplication {
 
 	public static void main(String[] args) {
