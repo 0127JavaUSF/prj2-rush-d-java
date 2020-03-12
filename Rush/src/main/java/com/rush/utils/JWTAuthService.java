@@ -1,5 +1,8 @@
 package com.rush.utils;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import org.springframework.stereotype.Service;
 
 import com.auth0.jwt.JWT;
@@ -7,13 +10,14 @@ import com.auth0.jwt.JWTVerifier;
 import com.auth0.jwt.algorithms.Algorithm;
 import com.auth0.jwt.exceptions.JWTCreationException;
 import com.auth0.jwt.exceptions.JWTVerificationException;
+import com.auth0.jwt.interfaces.Claim;
 import com.auth0.jwt.interfaces.DecodedJWT;
 
 @Service
 public class JWTAuthService {
 	
 	
-	public String generateToken(Long custId){
+	public static String generateToken(Long custId){
 		String token = null;
 		try {
 		    Algorithm algorithm = Algorithm.HMAC256("secret");
@@ -29,7 +33,7 @@ public class JWTAuthService {
 		}
 		
 	}
-	public boolean verifyToken(String token) {
+	public static boolean verifyToken(String token) {
 		String thetoken = token;
 		try {
 		    Algorithm algorithm = Algorithm.HMAC256("secret");
@@ -39,12 +43,13 @@ public class JWTAuthService {
 		    DecodedJWT jwt = verifier.verify(thetoken);
 		    return true;
 		} catch (JWTVerificationException exception){
-			System.out.println("token verification failed");
+			System.out.println("\n\n\ntoken verification failed\n\n\n");
 			return false;
 		    //Invalid signature/claims
 		}
 		
 	}
+
 	
 
 }
