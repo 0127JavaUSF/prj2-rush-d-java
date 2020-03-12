@@ -4,6 +4,7 @@ import java.util.List;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -12,8 +13,14 @@ import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonIdentityInfo;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.ObjectIdGenerators;
+
 @Entity
 @Table(name="products")
+@JsonIdentityInfo(generator=ObjectIdGenerators.IntSequenceGenerator.class, property="productJsonId")
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class Product {
 
 	//Table columns
@@ -28,29 +35,34 @@ public class Product {
 	@Column(name="product_price")
 	private Integer productPrice;
 	
-	@Column(name="production_description")
+	@Column(name="product_description")
 	private String productDescription;
 	
 	@Column(name="quantity_rem")
 	private Integer quantityRem;
 	
+<<<<<<< HEAD
 	@Column(name="ingredients")
 	private String ingredients;
+=======
+	@Column(name="img_url")
+	private String imgUrl;
+>>>>>>> b974b7837c3e6f25cb19d415a852c17e118f2012
 	
 	@OneToMany
 	@JoinColumn(name="product_id")
 	private List<OrderItem> orderItems;
 	
 	@OneToMany
-	@JoinColumn(name ="dietary_join_id")
+	@JoinColumn(name="product_id")
 	private List<DietaryJoin> dietaryJoins;
 	
-	@ManyToOne
+	@ManyToOne(fetch=FetchType.LAZY)
 	@JoinColumn(name="dessert_category_id")
 	private DessertCategory dessertCategory;
 
 	
-	//Getters and Setters
+	//getters and setters
 	public Long getProductId() {
 		return productId;
 	}
@@ -91,6 +103,7 @@ public class Product {
 		this.quantityRem = quantityRem;
 	}
 
+<<<<<<< HEAD
 
 
 	public String getIngredients() {
@@ -99,6 +112,14 @@ public class Product {
 
 	public void setIngredients(String ingredients) {
 		this.ingredients = ingredients;
+=======
+	public String getImgUrl() {
+		return imgUrl;
+	}
+
+	public void setImgUrl(String imgUrl) {
+		this.imgUrl = imgUrl;
+>>>>>>> b974b7837c3e6f25cb19d415a852c17e118f2012
 	}
 
 	public List<OrderItem> getOrderItems() {
@@ -125,6 +146,7 @@ public class Product {
 		this.dessertCategory = dessertCategory;
 	}
 
+<<<<<<< HEAD
 	
 	
 	
@@ -135,5 +157,31 @@ public class Product {
 	
 	
 	
+=======
+	public Product(Long productId, String productName, Integer productPrice, String productDescription,
+			Integer quantityRem, String imgUrl, List<OrderItem> orderItems, List<DietaryJoin> dietaryJoins,
+			DessertCategory dessertCategory) {
+		super();
+		this.productId = productId;
+		this.productName = productName;
+		this.productPrice = productPrice;
+		this.productDescription = productDescription;
+		this.quantityRem = quantityRem;
+		this.imgUrl = imgUrl;
+		this.orderItems = orderItems;
+		this.dietaryJoins = dietaryJoins;
+		this.dessertCategory = dessertCategory;
+	}
+
+	public Product() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	
+
+
+
+>>>>>>> b974b7837c3e6f25cb19d415a852c17e118f2012
 	
 }
