@@ -1,4 +1,4 @@
-package com.rush.controllers;
+package com.rush.controller;
 
 import java.util.HashMap;
 import java.util.Map;

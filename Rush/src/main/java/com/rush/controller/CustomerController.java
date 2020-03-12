@@ -1,4 +1,4 @@
-package com.rush.controllers;
+package com.rush.controller;
 
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
