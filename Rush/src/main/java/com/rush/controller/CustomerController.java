@@ -13,7 +13,7 @@ import com.rush.service.CreateCustomerService;
 import com.rush.service.CustomerDtoService;
 
 @RestController
-@RequestMapping ("/Register")
+@RequestMapping ("/rush")
 public class CustomerController {
 
 	@Autowired
@@ -27,7 +27,7 @@ public class CustomerController {
 	
 	
 	
-	@PostMapping("/Customer")
+	@PostMapping("/customer")
 	public Customer newCustomer (@RequestBody CustomerDto customerDto) {
 		customerDtoService.createCustomerDto(customerDto);
 		BeanUtils.copyProperties(customerDto, customer);
