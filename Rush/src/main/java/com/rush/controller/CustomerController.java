@@ -27,8 +27,8 @@ public class CustomerController {
 	@Autowired
 	private Customer customer;
 	
+
 	Logger logger = LoggerFactory.getLogger(CustomerController.class);
-	
 	
 	@PostMapping("/customer")
 	public Customer newCustomer (@RequestBody CustomerDto customerDto) {	
