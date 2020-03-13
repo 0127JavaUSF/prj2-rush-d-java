@@ -24,6 +24,7 @@ import com.rush.model.LoginForm;
 import com.rush.service.LoginService;
 import com.rush.utils.CustomerJWTUtil;
 import com.rush.utils.JWTAuthService;
+import com.rush.utils.PasswordUtil;
 
 
 @CrossOrigin(origins = "http://localhost:4200", allowedHeaders = "*", allowCredentials = "true")
@@ -31,7 +32,8 @@ import com.rush.utils.JWTAuthService;
 public class LoginController {
 	
 	Logger logger = LoggerFactory.getLogger(LoginController.class);
-	
+	@Autowired
+	private PasswordUtil passwordUtil;
 	@Autowired
 	private LoginService loginService;
 	@Autowired
@@ -76,7 +78,8 @@ public class LoginController {
 		   * if jwt authenticated, return user details
 		   * else...(below)
 		   */
-		
+		String salt = "rushdessert";
+		loginForm.setPassword(passwordUtil.generateSecurePassword(loginForm.getPassword(), salt));
 		Customer customer = loginService.validateUser(loginForm);
 		//User sent credentials
 		try {
@@ -88,10 +91,9 @@ public class LoginController {
 	    		response.addCookie(cookie);
 	    		Map<String, String> responsebody = new HashMap();
 
-				responsebody.put("Response", "User has been verified");
+	    		responsebody.put("response", "User has been verified");
 				logger.info("Customer Logged In Successful");
 
-				responsebody.put("response", "User has been verified");
 
 	    		return ResponseEntity
 	    				.status(201)
