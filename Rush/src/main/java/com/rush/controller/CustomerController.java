@@ -25,8 +25,6 @@ public class CustomerController {
 	@Autowired
 	private Customer customer;
 	
-	
-	
 	@PostMapping("/customer")
 	public Customer newCustomer (@RequestBody CustomerDto customerDto) {
 		customerDtoService.createCustomerDto(customerDto);
