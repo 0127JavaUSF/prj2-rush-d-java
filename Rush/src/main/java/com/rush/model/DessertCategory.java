@@ -25,10 +25,6 @@ public class DessertCategory {
 	
 	@Column(name="category_name")
 	private String categoryName;
-
-//	@OneToMany
-//	@JoinColumn(name="dessert_category_id")
-//	private List<Product> products;
 	
 	//Getters and Setters
 	public Long getDessertCategoryId() {
