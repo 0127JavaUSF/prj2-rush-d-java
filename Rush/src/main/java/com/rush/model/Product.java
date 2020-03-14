@@ -33,7 +33,7 @@ public class Product {
 	private Long productId;
 	
 	@Column(name="product_name")
-	@JsonView(DataView.ProductView.class)
+	@JsonView(DataView.ItemView.class)
 	private String productName;
 	
 	@Column(name="product_price")
@@ -53,7 +53,7 @@ public class Product {
 	private Integer quantityRem;
 	
 	@Column(name="img_url")
-	@JsonView(DataView.ProductView.class)
+	@JsonView(DataView.ItemView.class)
 	private String imgUrl;
 	
 	@OneToMany
