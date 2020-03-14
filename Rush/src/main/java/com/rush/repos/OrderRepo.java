@@ -6,6 +6,7 @@ import org.springframework.stereotype.Repository;
 import com.rush.model.Order;
 
 @Repository
-public interface OrderDao extends JpaRepository <Order, Long>{
+public interface OrderRepo extends JpaRepository<Order, Long>{
 
 }
+	

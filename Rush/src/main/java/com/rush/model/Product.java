@@ -38,6 +38,9 @@ public class Product {
 	@Column(name="product_description")
 	private String productDescription;
 	
+	@Column(name="dietary_restrictions")
+	private String dietaryRestrictions;
+	
 	@Column(name="quantity_rem")
 	private Integer quantityRem;
 	
@@ -48,111 +51,130 @@ public class Product {
 	@JoinColumn(name="product_id")
 	private List<OrderItem> orderItems;
 	
-	@OneToMany
-	@JoinColumn(name="product_id")
-	private List<DietaryJoin> dietaryJoins;
 	
 	@ManyToOne(fetch=FetchType.LAZY)
 	@JoinColumn(name="dessert_category_id")
 	private DessertCategory dessertCategory;
 
-	
-	//getters and setters
+
 	public Long getProductId() {
 		return productId;
 	}
+
 
 	public void setProductId(Long productId) {
 		this.productId = productId;
 	}
 
+
 	public String getProductName() {
 		return productName;
 	}
+
 
 	public void setProductName(String productName) {
 		this.productName = productName;
 	}
 
+
 	public Integer getProductPrice() {
 		return productPrice;
 	}
+
 
 	public void setProductPrice(Integer productPrice) {
 		this.productPrice = productPrice;
 	}
 
+
 	public String getProductDescription() {
 		return productDescription;
 	}
+
 
 	public void setProductDescription(String productDescription) {
 		this.productDescription = productDescription;
 	}
 
+
+	public String getDietaryRestrictions() {
+		return dietaryRestrictions;
+	}
+
+
+	public void setDietaryRestrictions(String dietaryRestrictions) {
+		this.dietaryRestrictions = dietaryRestrictions;
+	}
+
+
 	public Integer getQuantityRem() {
 		return quantityRem;
 	}
+
 
 	public void setQuantityRem(Integer quantityRem) {
 		this.quantityRem = quantityRem;
 	}
 
+
 	public String getImgUrl() {
 		return imgUrl;
 	}
+
 
 	public void setImgUrl(String imgUrl) {
 		this.imgUrl = imgUrl;
 	}
 
+
 	public List<OrderItem> getOrderItems() {
 		return orderItems;
 	}
+
 
 	public void setOrderItems(List<OrderItem> orderItems) {
 		this.orderItems = orderItems;
 	}
 
-	public List<DietaryJoin> getDietaryJoins() {
-		return dietaryJoins;
-	}
-
-	public void setDietaryJoins(List<DietaryJoin> dietaryJoins) {
-		this.dietaryJoins = dietaryJoins;
-	}
 
 	public DessertCategory getDessertCategory() {
 		return dessertCategory;
 	}
 
+
 	public void setDessertCategory(DessertCategory dessertCategory) {
 		this.dessertCategory = dessertCategory;
 	}
 
+
 	public Product(Long productId, String productName, Integer productPrice, String productDescription,
-			Integer quantityRem, String imgUrl, List<OrderItem> orderItems, List<DietaryJoin> dietaryJoins,
+			String dietaryRestrictions, Integer quantityRem, String imgUrl, List<OrderItem> orderItems,
 			DessertCategory dessertCategory) {
 		super();
 		this.productId = productId;
 		this.productName = productName;
 		this.productPrice = productPrice;
 		this.productDescription = productDescription;
+		this.dietaryRestrictions = dietaryRestrictions;
 		this.quantityRem = quantityRem;
 		this.imgUrl = imgUrl;
 		this.orderItems = orderItems;
-		this.dietaryJoins = dietaryJoins;
 		this.dessertCategory = dessertCategory;
 	}
+
 
 	public Product() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	
 
+	@Override
+	public String toString() {
+		return "Product [productId=" + productId + ", productName=" + productName + ", productPrice=" + productPrice
+				+ ", productDescription=" + productDescription + ", dietaryRestrictions=" + dietaryRestrictions
+				+ ", quantityRem=" + quantityRem + ", imgUrl=" + imgUrl + ", orderItems=" + orderItems
+				+ ", dessertCategory=" + dessertCategory + "]";
+	}
 
-
-	
 }
