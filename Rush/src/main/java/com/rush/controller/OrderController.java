@@ -12,8 +12,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.rush.model.Order;
 import com.rush.repos.OrderRepo;
-
-@CrossOrigin(origins="http://localhost:4200")
+//http://localhost:4200
+@CrossOrigin(origins="*")
 @RestController
 @RequestMapping("/rush")
 
@@ -30,6 +30,10 @@ public class OrderController {
 	@GetMapping("/orders")
 	public List<Order> getAllOrders(){
 		return orderRepo.findAll();
-
+	}
+	
+	@GetMapping("/orders/customer")
+	public List<Order> findCustOrders(){
+		return orderRepo.findAllCustomerOrders();
 	}
 }
