@@ -808,3 +808,40 @@ org.postgresql.util.PSQLException: ERROR: null value in column "credit_card_numb
 2020-03-14 01:02:07.364 ERROR 17312 --- [http-nio-9009-exec-2] com.rush.controller.LoginController      : Fail Seesion Initialization
 2020-03-14 01:02:07.477  INFO 17312 --- [http-nio-9009-exec-1] com.rush.controller.CustomerController   : Creating Customer Profile
 2020-03-14 01:04:16.646  INFO 17312 --- [http-nio-9009-exec-8] com.rush.controller.LoginController      : Customer Logged In Successful
+2020-03-14 01:04:16.689  INFO 17312 --- [http-nio-9009-exec-9] com.rush.controller.ProductController    : Retrieve Produ0ct list
+2020-03-14 01:08:32.128  INFO 17312 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-03-14 01:08:32.133  INFO 17312 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-14 01:08:32.135  INFO 17312 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-03-14 01:08:32.135  INFO 17312 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-03-14 01:08:32.152  INFO 17312 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-03-14 14:02:38.570  INFO 1588 --- [main] com.rush.RushApplication                 : Starting RushApplication on DESKTOP-8EKMIQ1 with PID 1588 (started by aceve in C:\Users\aceve\OneDrive\Desktop\Revature\Projects\Project 2\Spring\prj2-rush-d-java\Rush)
+2020-03-14 14:02:38.574  INFO 1588 --- [main] com.rush.RushApplication                 : No active profile set, falling back to default profiles: default
+2020-03-14 14:02:39.372  INFO 1588 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-03-14 14:02:39.453  INFO 1588 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 71ms. Found 4 JPA repository interfaces.
+2020-03-14 14:02:39.969  INFO 1588 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9009 (http)
+2020-03-14 14:02:39.979  INFO 1588 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-14 14:02:39.979  INFO 1588 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-14 14:02:40.062  INFO 1588 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-14 14:02:40.062  INFO 1588 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1447 ms
+2020-03-14 14:02:40.203  INFO 1588 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-03-14 14:02:40.277  INFO 1588 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.12.Final}
+2020-03-14 14:02:40.280  INFO 1588 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-03-14 14:02:40.317  INFO 1588 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-03-14 14:02:40.428  INFO 1588 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-14 14:02:41.735  INFO 1588 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-14 14:02:41.749  INFO 1588 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2020-03-14 14:02:49.003  INFO 1588 --- [main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000421: Disabling contextual LOB creation as hibernate.jdbc.lob.non_contextual_creation is true
+2020-03-14 14:02:49.017  INFO 1588 --- [main] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@292158f8
+2020-03-14 14:02:50.356  INFO 1588 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-03-14 14:02:50.813  INFO 1588 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-03-14 14:02:51.102  WARN 1588 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-14 14:02:51.399  INFO 1588 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-14 14:02:51.702  INFO 1588 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9009 (http) with context path ''
+2020-03-14 14:02:51.704  INFO 1588 --- [main] com.rush.RushApplication                 : Started RushApplication in 13.598 seconds (JVM running for 14.59)
+2020-03-14 14:03:04.907  INFO 1588 --- [http-nio-9009-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-14 14:03:04.908  INFO 1588 --- [http-nio-9009-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-03-14 14:03:04.916  INFO 1588 --- [http-nio-9009-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2020-03-14 14:03:04.973 ERROR 1588 --- [http-nio-9009-exec-1] com.rush.controller.LoginController      : Fail Seesion Initialization
+2020-03-14 14:03:11.542  INFO 1588 --- [http-nio-9009-exec-3] com.rush.controller.LoginController      : Customer Logged In Successful
