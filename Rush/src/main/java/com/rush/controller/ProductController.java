@@ -13,6 +13,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.fasterxml.jackson.annotation.JsonView;
+import com.rush.jview.DataView;
 import com.rush.model.Product;
 import com.rush.repos.ProductRepo;
 import com.rush.service.ProductService;
@@ -35,12 +37,14 @@ public class ProductController {
 	}
 	
 	@GetMapping("/products")
+	@JsonView(DataView.ProductView.class)
 	public List<Product> getProduct() {
 		logger.info("Retrieve Produ0ct list");
 		return productService.getProduct();
 	}
 	
 	@GetMapping("products/{id}")
+	@JsonView(DataView.ProductView.class)
 	public ResponseEntity<Product>
 	getProductById(@PathVariable(value="id") Long productId){
 		Optional<Product> product = productRepo.findById(productId);

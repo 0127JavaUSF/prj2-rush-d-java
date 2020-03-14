@@ -10,6 +10,8 @@ import javax.persistence.Table;
 import org.springframework.stereotype.Component;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonView;
+import com.rush.jview.DataView;
 
 @Component
 @Entity
@@ -20,6 +22,7 @@ public class Customer {
 	//Table columns
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@JsonView(DataView.OrderView.class)
 	@Column(name="cust_id")
 	private Long custId;
 	

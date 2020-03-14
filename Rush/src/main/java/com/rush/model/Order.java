@@ -15,7 +15,9 @@ import javax.persistence.Table;
 
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonView;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
+import com.rush.jview.DataView;
 
 @Entity
 @Table(name="orders")
@@ -27,11 +29,14 @@ public class Order {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Column(name="order_id")
+	@JsonView(DataView.OrderView.class)
 	private Long orderId;
 	
 	@Column(name="order_date")
+	@JsonView(DataView.OrderView.class)
 	private String order_date;
 
+	
 	@ManyToOne(fetch=FetchType.LAZY)
 	@JoinColumn(name="cust_id")
 	private Customer customer;

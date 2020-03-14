@@ -12,6 +12,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.fasterxml.jackson.annotation.JsonView;
+import com.rush.jview.DataView;
 import com.rush.model.Order;
 import com.rush.repos.OrderRepo;
 //http://localhost:4200
@@ -33,12 +35,7 @@ public class OrderController {
 	}
 	
 	@GetMapping("/orders")
-	public List<Order> getAllOrders(){
-		logger.info("Retreive Order");
-		return orderRepo.findAll();
-	}
-	
-	@GetMapping("/orders/customer")
+	@JsonView(DataView.OrderView.class)
 	public List<Order> findCustOrders(){
 		return orderRepo.findAllCustomerOrders();
 	}

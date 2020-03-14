@@ -9,7 +9,9 @@ import javax.persistence.Table;
 
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonView;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
+import com.rush.jview.DataView;
 
 @Entity
 @Table(name="dessert_category")
@@ -20,9 +22,11 @@ public class DessertCategory {
 	//Table columns
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@JsonView(DataView.ProductView.class)
 	@Column(name="dessert_category_id")
 	private Long dessertCategoryId;
 	
+	@JsonView(DataView.ProductView.class)
 	@Column(name="category_name")
 	private String categoryName;
 
