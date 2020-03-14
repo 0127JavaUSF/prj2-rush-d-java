@@ -845,3 +845,4 @@ org.postgresql.util.PSQLException: ERROR: null value in column "credit_card_numb
 2020-03-14 14:03:04.916  INFO 1588 --- [http-nio-9009-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
 2020-03-14 14:03:04.973 ERROR 1588 --- [http-nio-9009-exec-1] com.rush.controller.LoginController      : Fail Seesion Initialization
 2020-03-14 14:03:11.542  INFO 1588 --- [http-nio-9009-exec-3] com.rush.controller.LoginController      : Customer Logged In Successful
+2020-03-14 14:03:11.623  INFO 1588 --- [http-nio-9009-exec-4] com.rush.controller.ProductController    : Retrieve Produ0ct list
