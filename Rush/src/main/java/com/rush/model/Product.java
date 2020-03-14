@@ -15,7 +15,9 @@ import javax.persistence.Table;
 
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonView;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
+import com.rush.jview.DataView;
 
 @Entity
 @Table(name="products")
@@ -27,24 +29,31 @@ public class Product {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Column(name="product_id")
+	@JsonView(DataView.ProductView.class)
 	private Long productId;
 	
 	@Column(name="product_name")
+	@JsonView(DataView.ProductView.class)
 	private String productName;
 	
 	@Column(name="product_price")
+	@JsonView(DataView.ProductView.class)
 	private Integer productPrice;
 	
 	@Column(name="product_description")
+	@JsonView(DataView.ProductView.class)
 	private String productDescription;
 	
 	@Column(name="dietary_restrictions")
+	@JsonView(DataView.ProductView.class)
 	private String dietaryRestrictions;
 	
 	@Column(name="quantity_rem")
+	@JsonView(DataView.ProductView.class)
 	private Integer quantityRem;
 	
 	@Column(name="img_url")
+	@JsonView(DataView.ProductView.class)
 	private String imgUrl;
 	
 	@OneToMany
@@ -54,6 +63,7 @@ public class Product {
 	
 	@ManyToOne(fetch=FetchType.LAZY)
 	@JoinColumn(name="dessert_category_id")
+	@JsonView(DataView.ProductView.class)
 	private DessertCategory dessertCategory;
 
 
