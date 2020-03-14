@@ -102,3 +102,8 @@ com.fasterxml.jackson.core.exc.InputCoercionException: Numeric value (7987654321
 	at java.lang.Thread.run(Unknown Source) [na:1.8.0_241]
 
 2020-03-13 15:57:35.489  INFO 22068 --- [http-nio-9009-exec-7] com.rush.controller.CustomerController   : Creating Customer Profile
+2020-03-13 21:41:25.577  INFO 22068 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-03-13 21:41:26.336  INFO 22068 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-13 21:41:26.367  INFO 22068 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-03-13 21:41:26.678  INFO 22068 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-03-13 21:41:26.844  INFO 22068 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
