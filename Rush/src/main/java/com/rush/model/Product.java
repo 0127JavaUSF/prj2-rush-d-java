@@ -177,8 +177,4 @@ public class Product {
 				+ ", dessertCategory=" + dessertCategory + "]";
 	}
 
-	
-	
-
-	
 }
