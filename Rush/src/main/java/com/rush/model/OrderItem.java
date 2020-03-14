@@ -10,6 +10,9 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonView;
+import com.rush.jview.DataView;
+
 @Entity
 @Table(name="order_items")
 public class OrderItem {
@@ -18,12 +21,15 @@ public class OrderItem {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Column(name="order_items_id")
+	@JsonView(DataView.ItemView.class)
 	private Long orderItemsId;
 	
 	@Column(name="quantity")
+	@JsonView(DataView.ItemView.class)
 	private Integer quantity;
 	
 	@Column(name="item_price")
+	@JsonView(DataView.ItemView.class)
 	private Integer itemPrice;
 
 	@ManyToOne(fetch=FetchType.LAZY)
@@ -32,6 +38,7 @@ public class OrderItem {
 	
 	@ManyToOne(fetch=FetchType.LAZY)
 	@JoinColumn(name="product_id")
+	@JsonView(DataView.ItemView.class)
 	private Product product;
 
 	
