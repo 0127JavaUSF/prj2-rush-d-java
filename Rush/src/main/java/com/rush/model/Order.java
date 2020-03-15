@@ -29,15 +29,18 @@ public class Order {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Column(name="order_id")
-	@JsonView(DataView.OrderView.class)
+	//@JsonView(DataView.OrderView.class)
+	@JsonView(DataView.ItemView.class)
 	private Long orderId;
 	
 	@Column(name="order_date")
-	@JsonView(DataView.OrderView.class)
+	//@JsonView(DataView.OrderView.class)
+	@JsonView(DataView.ItemView.class)
 	private String order_date;
 
 	@Column(name="order_total")
-	@JsonView(DataView.OrderView.class)
+	//@JsonView(DataView.OrderView.class)
+	@JsonView(DataView.ItemView.class)
 	private String orderTotal;
 	
 	@ManyToOne(fetch=FetchType.LAZY)

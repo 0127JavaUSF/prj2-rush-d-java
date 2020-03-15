@@ -33,6 +33,7 @@ public class OrderItem {
 	private Integer itemPrice;
 
 	@ManyToOne(fetch=FetchType.LAZY)
+	@JsonView(DataView.ItemView.class)
 	@JoinColumn(name="order_id")
 	private Order order;
 	
