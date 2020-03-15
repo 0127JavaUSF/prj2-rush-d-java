@@ -29,16 +29,19 @@ public class Order {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Column(name="order_id")
-	@JsonView(DataView.OrderView.class)
+	//@JsonView(DataView.OrderView.class)
+	@JsonView(DataView.ItemView.class)
 	private Long orderId;
 	
 	@Column(name="order_date")
-	@JsonView(DataView.OrderView.class)
+	//@JsonView(DataView.OrderView.class)
+	@JsonView(DataView.ItemView.class)
 	private String order_date;
 
 	@Column(name="order_total")
-	@JsonView(DataView.OrderView.class)
-	private String orderTotal;
+	//@JsonView(DataView.OrderView.class)
+	@JsonView(DataView.ItemView.class)
+	private Double orderTotal;
 	
 	@ManyToOne(fetch=FetchType.LAZY)
 	@JoinColumn(name="cust_id")
@@ -65,11 +68,11 @@ public class Order {
 		this.order_date = order_date;
 	}
 
-	public String getOrderTotal() {
+	public Double getOrderTotal() {
 		return orderTotal;
 	}
 
-	public void setOrderTotal(String orderTotal) {
+	public void setOrderTotal(Double orderTotal) {
 		this.orderTotal = orderTotal;
 	}
 
@@ -89,7 +92,7 @@ public class Order {
 		this.orderItems = orderItems;
 	}
 
-	public Order(Long orderId, String order_date, String orderTotal, Customer customer, List<OrderItem> orderItems) {
+	public Order(Long orderId, String order_date, Double orderTotal, Customer customer, List<OrderItem> orderItems) {
 		super();
 		this.orderId = orderId;
 		this.order_date = order_date;
@@ -103,8 +106,6 @@ public class Order {
 		// TODO Auto-generated constructor stub
 	}
 
-	
 
-	
 	
 }
