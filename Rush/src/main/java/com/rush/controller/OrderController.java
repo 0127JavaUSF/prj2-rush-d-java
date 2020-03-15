@@ -36,10 +36,10 @@ public class OrderController {
 		return orderRepo.save(order);
 	}
 	
-	@GetMapping("/orders")
+	@GetMapping("/orders/customer/{id}")
 	@JsonView(DataView.OrderView.class)
-	public List<Order> findCustOrders(){
-		return orderRepo.findAllCustomerOrders();
+	public List<Order> findCustOrders(@PathVariable(value="id") Long custId){
+		return orderRepo.findAllCustomerOrders(custId);
 	}
 	
 	@GetMapping("/orders/{id}")
