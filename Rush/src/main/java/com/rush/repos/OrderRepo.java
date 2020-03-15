@@ -14,7 +14,7 @@ import com.rush.model.OrderItem;
 public interface OrderRepo extends JpaRepository<Order, Long>{
 
 	
-	@Query("SELECT o FROM Order o WHERE o.customer.custId = 4")
+	@Query("SELECT o FROM Order o WHERE o.customer.custId = 1")
 	List<Order> findAllCustomerOrders();
 	
 	@Query("SELECT o FROM OrderItem o WHERE o.order.orderId = :id")

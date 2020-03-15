@@ -53,6 +53,10 @@ public class ProductController {
 		return ResponseEntity.ok().body(prod);	
 	}
 	
-	
+	@GetMapping("/products/category/{cat}")
+	@JsonView(DataView.ProductView.class)
+	public List<Product> findCatProds(@PathVariable(value="cat") String dessertCategory){
+		return productRepo.findProductsInCat(dessertCategory);
+	}
 	
 }
