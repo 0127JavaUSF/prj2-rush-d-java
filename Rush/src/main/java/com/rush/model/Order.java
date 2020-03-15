@@ -41,7 +41,7 @@ public class Order {
 	@Column(name="order_total")
 	//@JsonView(DataView.OrderView.class)
 	@JsonView(DataView.ItemView.class)
-	private String orderTotal;
+	private Double orderTotal;
 	
 	@ManyToOne(fetch=FetchType.LAZY)
 	@JoinColumn(name="cust_id")
@@ -68,11 +68,11 @@ public class Order {
 		this.order_date = order_date;
 	}
 
-	public String getOrderTotal() {
+	public Double getOrderTotal() {
 		return orderTotal;
 	}
 
-	public void setOrderTotal(String orderTotal) {
+	public void setOrderTotal(Double orderTotal) {
 		this.orderTotal = orderTotal;
 	}
 
@@ -92,7 +92,7 @@ public class Order {
 		this.orderItems = orderItems;
 	}
 
-	public Order(Long orderId, String order_date, String orderTotal, Customer customer, List<OrderItem> orderItems) {
+	public Order(Long orderId, String order_date, Double orderTotal, Customer customer, List<OrderItem> orderItems) {
 		super();
 		this.orderId = orderId;
 		this.order_date = order_date;
@@ -106,8 +106,6 @@ public class Order {
 		// TODO Auto-generated constructor stub
 	}
 
-	
 
-	
 	
 }

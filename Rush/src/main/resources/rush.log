@@ -657,3 +657,312 @@ org.hibernate.TransientObjectException: object references an unsaved transient i
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.31.jar:9.0.31]
 	at java.lang.Thread.run(Unknown Source) [na:1.8.0_241]
 
+2020-03-15 13:51:46.328  INFO 4728 --- [main] com.rush.RushApplication                 : Starting RushApplication on DESKTOP-8EKMIQ1 with PID 4728 (started by aceve in C:\Users\aceve\OneDrive\Desktop\Revature\Projects\Project 2\Spring\prj2-rush-d-java\Rush)
+2020-03-15 13:51:46.331  INFO 4728 --- [main] com.rush.RushApplication                 : No active profile set, falling back to default profiles: default
+2020-03-15 13:51:47.187  INFO 4728 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-03-15 13:51:47.293  INFO 4728 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 94ms. Found 4 JPA repository interfaces.
+2020-03-15 13:51:47.909  INFO 4728 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9009 (http)
+2020-03-15 13:51:47.918  INFO 4728 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-15 13:51:47.919  INFO 4728 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-15 13:51:48.015  INFO 4728 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-15 13:51:48.016  INFO 4728 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1645 ms
+2020-03-15 13:51:48.222  INFO 4728 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-03-15 13:51:48.452  INFO 4728 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.12.Final}
+2020-03-15 13:51:48.456  INFO 4728 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-03-15 13:51:48.580  INFO 4728 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-03-15 13:51:48.753  INFO 4728 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-15 13:51:49.982  INFO 4728 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-15 13:51:50.010  INFO 4728 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2020-03-15 13:51:57.062  INFO 4728 --- [main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000421: Disabling contextual LOB creation as hibernate.jdbc.lob.non_contextual_creation is true
+2020-03-15 13:51:57.080  INFO 4728 --- [main] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@421056e5
+2020-03-15 13:51:58.139  WARN 4728 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2020-03-15 13:51:58.139  WARN 4728 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : drop cascades to constraint fkoc1xoospfh6mvvnfhmg09f5o3 on table dietary_join
+2020-03-15 13:51:58.580  INFO 4728 --- [main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@40bb4f87'
+2020-03-15 13:51:58.587  INFO 4728 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-03-15 13:51:59.222  INFO 4728 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-03-15 13:51:59.511  WARN 4728 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-15 13:51:59.656  INFO 4728 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-15 13:51:59.891  INFO 4728 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9009 (http) with context path ''
+2020-03-15 13:51:59.894  INFO 4728 --- [main] com.rush.RushApplication                 : Started RushApplication in 13.926 seconds (JVM running for 16.804)
+2020-03-15 13:52:48.943  INFO 4728 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-03-15 13:52:48.948  INFO 4728 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-15 13:52:48.950  INFO 4728 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-03-15 13:52:48.952  INFO 4728 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-03-15 13:52:48.970  INFO 4728 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-03-15 13:53:49.659  INFO 17864 --- [main] com.rush.RushApplication                 : Starting RushApplication on DESKTOP-8EKMIQ1 with PID 17864 (started by aceve in C:\Users\aceve\OneDrive\Desktop\Revature\Projects\Project 2\Spring\prj2-rush-d-java\Rush)
+2020-03-15 13:53:49.662  INFO 17864 --- [main] com.rush.RushApplication                 : No active profile set, falling back to default profiles: default
+2020-03-15 13:53:50.143  INFO 17864 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-03-15 13:53:50.199  INFO 17864 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49ms. Found 4 JPA repository interfaces.
+2020-03-15 13:53:50.571  INFO 17864 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9009 (http)
+2020-03-15 13:53:50.578  INFO 17864 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-15 13:53:50.578  INFO 17864 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-15 13:53:50.647  INFO 17864 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-15 13:53:50.648  INFO 17864 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 954 ms
+2020-03-15 13:53:50.769  INFO 17864 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-03-15 13:53:50.827  INFO 17864 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.12.Final}
+2020-03-15 13:53:50.828  INFO 17864 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-03-15 13:53:50.858  INFO 17864 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-03-15 13:53:50.947  INFO 17864 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-15 13:53:52.926  INFO 17864 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-15 13:53:52.963  INFO 17864 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2020-03-15 13:54:00.541  INFO 17864 --- [main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000421: Disabling contextual LOB creation as hibernate.jdbc.lob.non_contextual_creation is true
+2020-03-15 13:54:00.555  INFO 17864 --- [main] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@2af69643
+2020-03-15 13:54:01.859  INFO 17864 --- [main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@4b432e53'
+2020-03-15 13:54:01.866  INFO 17864 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-03-15 13:54:02.325  INFO 17864 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-03-15 13:54:02.697  WARN 17864 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-15 13:54:02.845  INFO 17864 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-15 13:54:03.174  INFO 17864 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9009 (http) with context path ''
+2020-03-15 13:54:03.176  INFO 17864 --- [main] com.rush.RushApplication                 : Started RushApplication in 13.799 seconds (JVM running for 14.446)
+2020-03-15 13:54:26.864  INFO 17864 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-03-15 13:54:26.869  INFO 17864 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-15 13:54:26.870  INFO 17864 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-03-15 13:54:26.872  INFO 17864 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-03-15 13:54:26.887  INFO 17864 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-03-15 13:54:30.929  INFO 19004 --- [main] com.rush.RushApplication                 : Starting RushApplication on DESKTOP-8EKMIQ1 with PID 19004 (started by aceve in C:\Users\aceve\OneDrive\Desktop\Revature\Projects\Project 2\Spring\prj2-rush-d-java\Rush)
+2020-03-15 13:54:30.931  INFO 19004 --- [main] com.rush.RushApplication                 : No active profile set, falling back to default profiles: default
+2020-03-15 13:54:31.390  INFO 19004 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-03-15 13:54:31.445  INFO 19004 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50ms. Found 4 JPA repository interfaces.
+2020-03-15 13:54:31.818  INFO 19004 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9009 (http)
+2020-03-15 13:54:31.825  INFO 19004 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-15 13:54:31.825  INFO 19004 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-15 13:54:31.966  INFO 19004 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-15 13:54:31.967  INFO 19004 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1008 ms
+2020-03-15 13:54:32.200  INFO 19004 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-03-15 13:54:32.252  INFO 19004 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.12.Final}
+2020-03-15 13:54:32.253  INFO 19004 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-03-15 13:54:32.283  INFO 19004 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-03-15 13:54:32.368  INFO 19004 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-15 13:54:34.324  INFO 19004 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-15 13:54:34.361  INFO 19004 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2020-03-15 13:54:41.654  INFO 19004 --- [main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000421: Disabling contextual LOB creation as hibernate.jdbc.lob.non_contextual_creation is true
+2020-03-15 13:54:41.667  INFO 19004 --- [main] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@1e8ab90f
+2020-03-15 13:54:42.943  INFO 19004 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-03-15 13:54:43.391  INFO 19004 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-03-15 13:54:43.556  WARN 19004 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-15 13:54:43.649  INFO 19004 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-15 13:54:43.832  INFO 19004 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9009 (http) with context path ''
+2020-03-15 13:54:43.834  INFO 19004 --- [main] com.rush.RushApplication                 : Started RushApplication in 13.567 seconds (JVM running for 14.669)
+2020-03-15 13:57:19.791  INFO 19004 --- [http-nio-9009-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-15 13:57:19.791  INFO 19004 --- [http-nio-9009-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-03-15 13:57:19.800  INFO 19004 --- [http-nio-9009-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2020-03-15 13:57:20.116  INFO 19004 --- [http-nio-9009-exec-2] com.rush.controller.CustomerController   : Creating Customer Profile
+2020-03-15 13:57:20.318  WARN 19004 --- [http-nio-9009-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 23502
+2020-03-15 13:57:20.319 ERROR 19004 --- [http-nio-9009-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : ERROR: null value in column "cvv" violates not-null constraint
+  Detail: Failing row contains (1, Joshua Ventura, 123, null, null, Joshua, Ventura, liJYxQ2JFG0ffavZ73yYY7k0iieg6kWD2vgwsLPQlfo=, acevent17).
+2020-03-15 13:57:20.415 ERROR 19004 --- [http-nio-9009-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.DataIntegrityViolationException: could not execute statement; SQL [n/a]; constraint [cvv]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement] with root cause
+
+org.postgresql.util.PSQLException: ERROR: null value in column "cvv" violates not-null constraint
+  Detail: Failing row contains (1, Joshua Ventura, 123, null, null, Joshua, Ventura, liJYxQ2JFG0ffavZ73yYY7k0iieg6kWD2vgwsLPQlfo=, acevent17).
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2497) ~[postgresql-42.2.8.jar:42.2.8]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2233) ~[postgresql-42.2.8.jar:42.2.8]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:310) ~[postgresql-42.2.8.jar:42.2.8]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:446) ~[postgresql-42.2.8.jar:42.2.8]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:370) ~[postgresql-42.2.8.jar:42.2.8]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:149) ~[postgresql-42.2.8.jar:42.2.8]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:124) ~[postgresql-42.2.8.jar:42.2.8]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61) ~[HikariCP-3.4.2.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java) ~[HikariCP-3.4.2.jar:na]
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:175) ~[hibernate-core-5.2.12.Final.jar:5.2.12.Final]
+	at org.hibernate.dialect.identity.GetGeneratedKeysDelegate.executeAndExtract(GetGeneratedKeysDelegate.java:57) ~[hibernate-core-5.2.12.Final.jar:5.2.12.Final]
+	at org.hibernate.id.insert.AbstractReturningDelegate.performInsert(AbstractReturningDelegate.java:42) ~[hibernate-core-5.2.12.Final.jar:5.2.12.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:2919) ~[hibernate-core-5.2.12.Final.jar:5.2.12.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3490) ~[hibernate-core-5.2.12.Final.jar:5.2.12.Final]
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:81) ~[hibernate-core-5.2.12.Final.jar:5.2.12.Final]
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:626) ~[hibernate-core-5.2.12.Final.jar:5.2.12.Final]
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:280) ~[hibernate-core-5.2.12.Final.jar:5.2.12.Final]
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:261) ~[hibernate-core-5.2.12.Final.jar:5.2.12.Final]
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:306) ~[hibernate-core-5.2.12.Final.jar:5.2.12.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:318) ~[hibernate-core-5.2.12.Final.jar:5.2.12.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:275) ~[hibernate-core-5.2.12.Final.jar:5.2.12.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:182) ~[hibernate-core-5.2.12.Final.jar:5.2.12.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:113) ~[hibernate-core-5.2.12.Final.jar:5.2.12.Final]
+	at org.hibernate.jpa.event.internal.core.JpaPersistEventListener.saveWithGeneratedId(JpaPersistEventListener.java:67) ~[hibernate-core-5.2.12.Final.jar:5.2.12.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:189) ~[hibernate-core-5.2.12.Final.jar:5.2.12.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:132) ~[hibernate-core-5.2.12.Final.jar:5.2.12.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:58) ~[hibernate-core-5.2.12.Final.jar:5.2.12.Final]
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:782) ~[hibernate-core-5.2.12.Final.jar:5.2.12.Final]
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:767) ~[hibernate-core-5.2.12.Final.jar:5.2.12.Final]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_241]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_241]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_241]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_241]
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:368) ~[spring-orm-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at com.sun.proxy.$Proxy89.persist(Unknown Source) ~[na:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_241]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_241]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_241]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_241]
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:314) ~[spring-orm-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at com.sun.proxy.$Proxy89.persist(Unknown Source) ~[na:na]
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:554) ~[spring-data-jpa-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_241]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_241]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_241]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_241]
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:371) ~[spring-data-commons-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:204) ~[spring-data-commons-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:657) ~[spring-data-commons-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.doInvoke(RepositoryFactorySupport.java:621) ~[spring-data-commons-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.invoke(RepositoryFactorySupport.java:605) ~[spring-data-commons-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80) ~[spring-data-commons-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:366) ~[spring-tx-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:99) ~[spring-tx-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139) ~[spring-tx-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:178) ~[spring-data-jpa-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95) ~[spring-aop-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212) ~[spring-aop-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at com.sun.proxy.$Proxy96.save(Unknown Source) ~[na:na]
+	at com.rush.service.CreateCustomerService.createCustomer(CreateCustomerService.java:16) ~[classes/:na]
+	at com.rush.controller.CustomerController.newCustomer(CustomerController.java:39) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_241]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_241]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_241]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_241]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1639) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.8.0_241]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.8.0_241]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at java.lang.Thread.run(Unknown Source) [na:1.8.0_241]
+
+2020-03-15 13:58:30.858  INFO 19004 --- [http-nio-9009-exec-3] com.rush.controller.CustomerController   : Creating Customer Profile
+2020-03-15 13:58:31.239 ERROR 19004 --- [http-nio-9009-exec-4] com.rush.controller.LoginController      : Fail Seesion Initialization
+2020-03-15 13:58:44.955  INFO 19004 --- [http-nio-9009-exec-6] com.rush.controller.LoginController      : Customer Logged In Successful
+2020-03-15 13:58:45.026  INFO 19004 --- [http-nio-9009-exec-7] com.rush.controller.ProductController    : Retrieve Produ0ct list
+2020-03-15 13:59:49.937  INFO 19004 --- [http-nio-9009-exec-10] com.rush.controller.CustomerController   : Creating Customer Profile
+2020-03-15 13:59:50.124 ERROR 19004 --- [http-nio-9009-exec-1] com.rush.controller.LoginController      : Fail Seesion Initialization
+2020-03-15 14:02:44.551  INFO 19004 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-03-15 14:02:44.553  INFO 19004 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-15 14:02:44.555  INFO 19004 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-03-15 14:02:44.557  INFO 19004 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-03-15 14:02:44.573  INFO 19004 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-03-15 14:02:47.580  INFO 16516 --- [main] com.rush.RushApplication                 : Starting RushApplication on DESKTOP-8EKMIQ1 with PID 16516 (started by aceve in C:\Users\aceve\OneDrive\Desktop\Revature\Projects\Project 2\Spring\prj2-rush-d-java\Rush)
+2020-03-15 14:02:47.583  INFO 16516 --- [main] com.rush.RushApplication                 : No active profile set, falling back to default profiles: default
+2020-03-15 14:02:48.190  INFO 16516 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-03-15 14:02:48.320  INFO 16516 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 113ms. Found 4 JPA repository interfaces.
+2020-03-15 14:02:49.027  INFO 16516 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9009 (http)
+2020-03-15 14:02:49.034  INFO 16516 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-15 14:02:49.035  INFO 16516 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-15 14:02:49.109  INFO 16516 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-15 14:02:49.109  INFO 16516 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1494 ms
+2020-03-15 14:02:49.317  INFO 16516 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-03-15 14:02:49.372  INFO 16516 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.12.Final}
+2020-03-15 14:02:49.373  INFO 16516 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-03-15 14:02:49.421  INFO 16516 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-03-15 14:02:49.526  INFO 16516 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-15 14:02:51.484  INFO 16516 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-15 14:02:51.531  INFO 16516 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2020-03-15 14:02:58.809  INFO 16516 --- [main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000421: Disabling contextual LOB creation as hibernate.jdbc.lob.non_contextual_creation is true
+2020-03-15 14:02:58.823  INFO 16516 --- [main] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@35267fd4
+2020-03-15 14:03:00.540  INFO 16516 --- [main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@60aec68a'
+2020-03-15 14:03:00.547  INFO 16516 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-03-15 14:03:01.041  INFO 16516 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-03-15 14:03:01.386  WARN 16516 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-15 14:03:01.575  INFO 16516 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-15 14:03:01.916  INFO 16516 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9009 (http) with context path ''
+2020-03-15 14:03:01.920  INFO 16516 --- [main] com.rush.RushApplication                 : Started RushApplication in 14.835 seconds (JVM running for 15.838)
+2020-03-15 14:03:34.712  INFO 16516 --- [http-nio-9009-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-15 14:03:34.712  INFO 16516 --- [http-nio-9009-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-03-15 14:03:34.720  INFO 16516 --- [http-nio-9009-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2020-03-15 14:03:34.932  INFO 16516 --- [http-nio-9009-exec-1] com.rush.controller.CustomerController   : Creating Customer Profile
+2020-03-15 14:03:35.508 ERROR 16516 --- [http-nio-9009-exec-2] com.rush.controller.LoginController      : Fail Seesion Initialization
+2020-03-15 14:04:50.844  INFO 16516 --- [http-nio-9009-exec-5] com.rush.controller.CustomerController   : Creating Customer Profile
+2020-03-15 14:04:51.055 ERROR 16516 --- [http-nio-9009-exec-6] com.rush.controller.LoginController      : Fail Seesion Initialization
+2020-03-15 14:05:12.820  INFO 16516 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-03-15 14:05:12.822  INFO 16516 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-15 14:05:12.824  INFO 16516 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-03-15 14:05:12.825  INFO 16516 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-03-15 14:05:12.841  INFO 16516 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-03-15 14:05:18.617  INFO 18880 --- [main] com.rush.RushApplication                 : Starting RushApplication on DESKTOP-8EKMIQ1 with PID 18880 (started by aceve in C:\Users\aceve\OneDrive\Desktop\Revature\Projects\Project 2\Spring\prj2-rush-d-java\Rush)
+2020-03-15 14:05:18.619  INFO 18880 --- [main] com.rush.RushApplication                 : No active profile set, falling back to default profiles: default
+2020-03-15 14:05:19.096  INFO 18880 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-03-15 14:05:19.239  INFO 18880 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 133ms. Found 4 JPA repository interfaces.
+2020-03-15 14:05:19.831  INFO 18880 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9009 (http)
+2020-03-15 14:05:19.837  INFO 18880 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-15 14:05:19.838  INFO 18880 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-15 14:05:19.902  INFO 18880 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-15 14:05:19.902  INFO 18880 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1253 ms
+2020-03-15 14:05:20.062  INFO 18880 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-03-15 14:05:20.116  INFO 18880 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.12.Final}
+2020-03-15 14:05:20.118  INFO 18880 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-03-15 14:05:20.146  INFO 18880 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-03-15 14:05:20.289  INFO 18880 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-15 14:05:22.294  INFO 18880 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-15 14:05:22.332  INFO 18880 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2020-03-15 14:05:29.917  INFO 18880 --- [main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000421: Disabling contextual LOB creation as hibernate.jdbc.lob.non_contextual_creation is true
+2020-03-15 14:05:29.933  INFO 18880 --- [main] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@302edb74
+2020-03-15 14:05:31.210  INFO 18880 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-03-15 14:05:31.531  INFO 18880 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-03-15 14:05:31.936  WARN 18880 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-15 14:05:32.121  INFO 18880 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-15 14:05:32.346  INFO 18880 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9009 (http) with context path ''
+2020-03-15 14:05:32.349  INFO 18880 --- [main] com.rush.RushApplication                 : Started RushApplication in 14.011 seconds (JVM running for 15.1)
+2020-03-15 14:06:20.931  INFO 18880 --- [http-nio-9009-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-15 14:06:20.932  INFO 18880 --- [http-nio-9009-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-03-15 14:06:20.941  INFO 18880 --- [http-nio-9009-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2020-03-15 14:06:21.434  INFO 18880 --- [http-nio-9009-exec-1] com.rush.controller.LoginController      : Customer Logged In Successful
+2020-03-15 14:06:21.477  INFO 18880 --- [http-nio-9009-exec-2] com.rush.controller.ProductController    : Retrieve Produ0ct list
+2020-03-15 14:06:28.754  INFO 18880 --- [http-nio-9009-exec-7] com.rush.controller.ProductController    : Retrieve Produ0ct list
+2020-03-15 14:06:34.918  INFO 18880 --- [http-nio-9009-exec-10] com.rush.controller.ProductController    : Retrieve Produ0ct list
+2020-03-15 14:07:17.016  INFO 18880 --- [http-nio-9009-exec-1] com.rush.controller.ProductController    : ProductID 
+2020-03-15 14:07:21.282  INFO 18880 --- [http-nio-9009-exec-2] com.rush.controller.ProductController    : Retrieve Produ0ct list
+2020-03-15 14:09:39.195  INFO 18880 --- [http-nio-9009-exec-5] com.rush.controller.ProductController    : ProductID 
+2020-03-15 14:09:40.879  INFO 18880 --- [http-nio-9009-exec-6] com.rush.controller.ProductController    : Retrieve Produ0ct list
