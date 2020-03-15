@@ -95,7 +95,6 @@ public class LoginController {
 	    		responsebody.put("custId", CustomerJWTUtil.getCustIdOrNull(token).toString());
 				logger.info("Customer Logged In Successful");
 
-
 	    		return ResponseEntity
 	    				.status(201)
 	    				.body(responsebody);//TODO return userID for client-side use

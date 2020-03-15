@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 2020-03-15 07:52:57.358  INFO 27928 --- [main] com.rush.RushApplication                 : Starting RushApplication on LAPTOP-LBL0B02E with PID 27928 (C:\Users\kirsa\Documents\workspace-sts-3.9.11.RELEASE\prj2-rush-d-java\Rush\target\classes started by kirsa in C:\Users\kirsa\Documents\workspace-sts-3.9.11.RELEASE\prj2-rush-d-java\Rush)
 2020-03-15 07:52:57.361  INFO 27928 --- [main] com.rush.RushApplication                 : No active profile set, falling back to default profiles: default
 2020-03-15 07:52:58.646  INFO 27928 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
@@ -2419,3 +2420,5 @@ org.postgresql.util.PSQLException: ERROR: column "order_date" is of type timesta
 2020-03-15 19:33:11.016  INFO 13200 --- [RMI TCP Connection(12)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2020-03-15 19:33:11.017  INFO 13200 --- [RMI TCP Connection(12)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2020-03-15 19:33:11.024  INFO 13200 --- [RMI TCP Connection(12)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+=======
+>>>>>>> 87672ffdead502f763e7ea63247974a913d55d60
