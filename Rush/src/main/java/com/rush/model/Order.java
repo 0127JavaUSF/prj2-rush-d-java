@@ -1,7 +1,9 @@
 package com.rush.model;
 
+import java.sql.Timestamp;
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -12,6 +14,8 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+
+import org.hibernate.annotations.CreationTimestamp;
 
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
@@ -36,7 +40,8 @@ public class Order {
 	@Column(name="order_date")
 	//@JsonView(DataView.OrderView.class)
 	@JsonView(DataView.ItemView.class)
-	private String order_date;
+	@CreationTimestamp
+	private Timestamp order_date;
 
 	@Column(name="order_total")
 	//@JsonView(DataView.OrderView.class)
@@ -47,7 +52,7 @@ public class Order {
 	@JoinColumn(name="cust_id")
 	private Customer customer;
 	
-	@OneToMany
+	@OneToMany(cascade = CascadeType.ALL)
 	@JoinColumn(name="order_id")
 	private List<OrderItem> orderItems;
 
@@ -60,11 +65,11 @@ public class Order {
 		this.orderId = orderId;
 	}
 
-	public String getOrder_date() {
+	public Timestamp getOrder_date() {
 		return order_date;
 	}
 
-	public void setOrder_date(String order_date) {
+	public void setOrder_date(Timestamp order_date) {
 		this.order_date = order_date;
 	}
 
@@ -92,7 +97,7 @@ public class Order {
 		this.orderItems = orderItems;
 	}
 
-	public Order(Long orderId, String order_date, Double orderTotal, Customer customer, List<OrderItem> orderItems) {
+	public Order(Long orderId, Timestamp order_date, Double orderTotal, Customer customer, List<OrderItem> orderItems) {
 		super();
 		this.orderId = orderId;
 		this.order_date = order_date;
