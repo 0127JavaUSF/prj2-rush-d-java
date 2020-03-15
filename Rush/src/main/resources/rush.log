@@ -254,3 +254,78 @@
 2020-03-14 18:06:15.016  INFO 17072 --- [http-nio-9009-exec-4] com.rush.controller.LoginController      : Session Initialization Successful
 2020-03-14 18:06:15.038  INFO 17072 --- [http-nio-9009-exec-5] com.rush.controller.ProductController    : Retrieve Produ0ct list
 2020-03-14 18:08:36.916  INFO 17072 --- [http-nio-9009-exec-2] com.rush.controller.LoginController      : Session Initialization Successful
+2020-03-14 18:08:36.949  INFO 17072 --- [http-nio-9009-exec-3] com.rush.controller.ProductController    : Retrieve Produ0ct list
+2020-03-14 18:13:50.182  INFO 17072 --- [http-nio-9009-exec-6] com.rush.controller.ProductController    : Retrieve Produ0ct list
+2020-03-14 18:15:08.956  INFO 17072 --- [RMI TCP Connection(18)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-03-14 18:15:08.968  INFO 17072 --- [RMI TCP Connection(18)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-14 18:15:08.968  INFO 17072 --- [RMI TCP Connection(18)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-03-14 18:15:08.968  INFO 17072 --- [RMI TCP Connection(18)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-03-14 18:15:08.984  INFO 17072 --- [RMI TCP Connection(18)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-03-14 20:12:31.404  INFO 1324 --- [main] com.rush.RushApplication                 : Starting RushApplication on LAPTOP-LBL0B02E with PID 1324 (C:\Users\kirsa\Documents\workspace-sts-3.9.11.RELEASE\prj2-rush-d-java\Rush\target\classes started by kirsa in C:\Users\kirsa\Documents\workspace-sts-3.9.11.RELEASE\prj2-rush-d-java\Rush)
+2020-03-14 20:12:31.409  INFO 1324 --- [main] com.rush.RushApplication                 : No active profile set, falling back to default profiles: default
+2020-03-14 20:12:32.544  INFO 1324 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-03-14 20:12:32.706  INFO 1324 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 151ms. Found 4 JPA repository interfaces.
+2020-03-14 20:12:33.228  INFO 1324 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9009 (http)
+2020-03-14 20:12:33.242  INFO 1324 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-14 20:12:33.243  INFO 1324 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-14 20:12:33.373  INFO 1324 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-14 20:12:33.374  INFO 1324 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1911 ms
+2020-03-14 20:12:33.538  INFO 1324 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-03-14 20:12:33.626  INFO 1324 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.12.Final}
+2020-03-14 20:12:33.629  INFO 1324 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-03-14 20:12:33.676  INFO 1324 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-03-14 20:12:33.773  INFO 1324 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-14 20:12:36.663  INFO 1324 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-14 20:12:36.676  INFO 1324 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2020-03-14 20:12:47.983  INFO 1324 --- [main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000421: Disabling contextual LOB creation as hibernate.jdbc.lob.non_contextual_creation is true
+2020-03-14 20:12:47.992  INFO 1324 --- [main] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@30364216
+2020-03-14 20:12:49.409  INFO 1324 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-03-14 20:12:49.725  INFO 1324 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-03-14 20:12:49.940  WARN 1324 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-14 20:12:50.061  INFO 1324 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-14 20:12:50.319  INFO 1324 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9009 (http) with context path ''
+2020-03-14 20:12:50.323  INFO 1324 --- [main] com.rush.RushApplication                 : Started RushApplication in 19.419 seconds (JVM running for 20.333)
+2020-03-14 20:16:47.142  INFO 1324 --- [http-nio-9009-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-14 20:16:47.143  INFO 1324 --- [http-nio-9009-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-03-14 20:16:47.156  INFO 1324 --- [http-nio-9009-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2020-03-14 20:16:47.742  INFO 1324 --- [http-nio-9009-exec-2] com.rush.controller.LoginController      : Customer Logged In Successful
+2020-03-14 20:16:47.814  INFO 1324 --- [http-nio-9009-exec-3] com.rush.controller.ProductController    : Retrieve Produ0ct list
+2020-03-14 20:32:21.782  INFO 1324 --- [http-nio-9009-exec-10] com.rush.controller.ProductController    : Retrieve Produ0ct list
+2020-03-14 21:12:56.101  INFO 1324 --- [http-nio-9009-exec-3] com.rush.controller.ProductController    : Retrieve Produ0ct list
+2020-03-14 21:13:04.815  INFO 1324 --- [http-nio-9009-exec-4] com.rush.controller.LoginController      : Session Initialization Successful
+2020-03-14 21:13:04.840  INFO 1324 --- [http-nio-9009-exec-5] com.rush.controller.ProductController    : Retrieve Produ0ct list
+2020-03-14 21:36:36.040  WARN 1324 --- [http-nio-9009-exec-7] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@6565d886 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2020-03-14 21:36:36.092  WARN 1324 --- [http-nio-9009-exec-7] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@5ccd5aec (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2020-03-14 21:36:36.144  WARN 1324 --- [http-nio-9009-exec-7] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@1b14232e (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2020-03-14 21:36:36.199  WARN 1324 --- [http-nio-9009-exec-7] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@50fe7922 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2020-03-14 21:36:36.248  WARN 1324 --- [http-nio-9009-exec-7] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@6d297a1a (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2020-03-14 21:36:36.299  WARN 1324 --- [http-nio-9009-exec-7] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@5b854769 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2020-03-14 21:36:36.351  WARN 1324 --- [http-nio-9009-exec-7] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@61b21264 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2020-03-14 21:36:36.407  WARN 1324 --- [http-nio-9009-exec-7] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@42a64019 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2020-03-14 21:36:36.455  WARN 1324 --- [http-nio-9009-exec-7] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@64f91bfd (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2020-03-14 21:36:36.503  WARN 1324 --- [http-nio-9009-exec-7] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@1536b604 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2020-03-14 21:36:40.063  WARN 1324 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m2s787ms354µs100ns).
+2020-03-14 21:37:47.002  INFO 1324 --- [http-nio-9009-exec-2] com.rush.controller.ProductController    : Retrieve Produ0ct list
+2020-03-14 21:38:27.532  INFO 1324 --- [http-nio-9009-exec-3] com.rush.controller.LoginController      : Session Initialization Successful
+2020-03-14 21:38:27.568  INFO 1324 --- [http-nio-9009-exec-4] com.rush.controller.ProductController    : Retrieve Produ0ct list
+2020-03-14 21:43:57.109  INFO 1324 --- [http-nio-9009-exec-7] com.rush.controller.LoginController      : Session Initialization Successful
+2020-03-14 21:43:57.162  INFO 1324 --- [http-nio-9009-exec-8] com.rush.controller.ProductController    : Retrieve Produ0ct list
+2020-03-14 21:44:01.832  INFO 1324 --- [http-nio-9009-exec-9] com.rush.controller.ProductController    : ProductID 
+2020-03-14 21:44:04.922  INFO 1324 --- [http-nio-9009-exec-10] com.rush.controller.ProductController    : Retrieve Produ0ct list
+2020-03-14 21:50:26.260  WARN 1324 --- [http-nio-9009-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries
+ at [Source: (PushbackInputStream); line: 6, column: 3]]
+2020-03-14 22:08:47.106  INFO 1324 --- [http-nio-9009-exec-10] com.rush.controller.ProductController    : Retrieve Produ0ct list
+2020-03-14 22:09:07.619  INFO 1324 --- [http-nio-9009-exec-3] com.rush.controller.ProductController    : Retrieve Produ0ct list
+2020-03-14 23:30:04.014  WARN 1324 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m22s208ms428µs800ns).
+2020-03-14 23:30:08.441  WARN 1324 --- [http-nio-9009-exec-7] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@1bb72301 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2020-03-14 23:30:08.493  WARN 1324 --- [http-nio-9009-exec-7] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@500cb513 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2020-03-14 23:30:08.540  WARN 1324 --- [http-nio-9009-exec-7] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@57a57896 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2020-03-14 23:30:08.587  WARN 1324 --- [http-nio-9009-exec-7] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@7528e648 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2020-03-14 23:30:08.633  WARN 1324 --- [http-nio-9009-exec-7] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@3f85b0d8 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2020-03-14 23:30:08.680  WARN 1324 --- [http-nio-9009-exec-7] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@a143e16 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2020-03-14 23:30:08.742  WARN 1324 --- [http-nio-9009-exec-7] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@7689960a (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2020-03-14 23:30:08.789  WARN 1324 --- [http-nio-9009-exec-7] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@44213435 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2020-03-14 23:30:08.836  WARN 1324 --- [http-nio-9009-exec-7] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@56304f19 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2020-03-14 23:30:08.883  WARN 1324 --- [http-nio-9009-exec-7] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@7d7f2f47 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
