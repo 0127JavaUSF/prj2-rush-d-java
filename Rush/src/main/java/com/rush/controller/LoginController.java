@@ -92,6 +92,7 @@ public class LoginController {
 	    		Map<String, String> responsebody = new HashMap();
 
 	    		responsebody.put("response", "User has been verified");
+	    		responsebody.put("custId", CustomerJWTUtil.getCustIdOrNull(token).toString());
 				logger.info("Customer Logged In Successful");
 
 
