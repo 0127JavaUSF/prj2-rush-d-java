@@ -15,7 +15,9 @@ import javax.persistence.Table;
 
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonView;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
+import com.rush.jview.DataView;
 
 @Entity
 @Table(name="products")
@@ -27,37 +29,42 @@ public class Product {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Column(name="product_id")
+	@JsonView(DataView.ProductView.class)
 	private Long productId;
 	
 	@Column(name="product_name")
+	@JsonView(DataView.ItemView.class)
 	private String productName;
 	
 	@Column(name="product_price")
+	@JsonView(DataView.ProductView.class)
 	private Integer productPrice;
 	
 	@Column(name="product_description")
+	@JsonView(DataView.ProductView.class)
 	private String productDescription;
 	
+	@Column(name="dietary_restrictions")
+	@JsonView(DataView.ProductView.class)
+	private String dietaryRestrictions;
+	
 	@Column(name="quantity_rem")
+	@JsonView(DataView.ProductView.class)
 	private Integer quantityRem;
 	
 	@Column(name="img_url")
+	@JsonView(DataView.ItemView.class)
 	private String imgUrl;
 	
 	@OneToMany
 	@JoinColumn(name="product_id")
 	private List<OrderItem> orderItems;
 	
-	@OneToMany
-	@JoinColumn(name="product_id")
-	private List<DietaryJoin> dietaryJoins;
-	
-	@ManyToOne(fetch=FetchType.LAZY)
-	@JoinColumn(name="dessert_category_id")
-	private DessertCategory dessertCategory;
+	@Column(name="dessert_category")
+	@JsonView(DataView.ProductView.class)
+	private String dessertCategory;
 
-	
-	//getters and setters
+	//Getters and Setters
 	public Long getProductId() {
 		return productId;
 	}
@@ -90,6 +97,14 @@ public class Product {
 		this.productDescription = productDescription;
 	}
 
+	public String getDietaryRestrictions() {
+		return dietaryRestrictions;
+	}
+
+	public void setDietaryRestrictions(String dietaryRestrictions) {
+		this.dietaryRestrictions = dietaryRestrictions;
+	}
+
 	public Integer getQuantityRem() {
 		return quantityRem;
 	}
@@ -114,34 +129,26 @@ public class Product {
 		this.orderItems = orderItems;
 	}
 
-	public List<DietaryJoin> getDietaryJoins() {
-		return dietaryJoins;
-	}
-
-	public void setDietaryJoins(List<DietaryJoin> dietaryJoins) {
-		this.dietaryJoins = dietaryJoins;
-	}
-
-	public DessertCategory getDessertCategory() {
+	public String getDessertCategory() {
 		return dessertCategory;
 	}
 
-	public void setDessertCategory(DessertCategory dessertCategory) {
+	public void setDessertCategory(String dessertCategory) {
 		this.dessertCategory = dessertCategory;
 	}
 
 	public Product(Long productId, String productName, Integer productPrice, String productDescription,
-			Integer quantityRem, String imgUrl, List<OrderItem> orderItems, List<DietaryJoin> dietaryJoins,
-			DessertCategory dessertCategory) {
+			String dietaryRestrictions, Integer quantityRem, String imgUrl, List<OrderItem> orderItems,
+			String dessertCategory) {
 		super();
 		this.productId = productId;
 		this.productName = productName;
 		this.productPrice = productPrice;
 		this.productDescription = productDescription;
+		this.dietaryRestrictions = dietaryRestrictions;
 		this.quantityRem = quantityRem;
 		this.imgUrl = imgUrl;
 		this.orderItems = orderItems;
-		this.dietaryJoins = dietaryJoins;
 		this.dessertCategory = dessertCategory;
 	}
 
@@ -150,9 +157,7 @@ public class Product {
 		// TODO Auto-generated constructor stub
 	}
 
-	
-
-
 
 	
+
 }
