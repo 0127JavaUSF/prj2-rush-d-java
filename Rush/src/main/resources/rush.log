@@ -1420,3 +1420,8 @@ org.hibernate.TransientObjectException: object references an unsaved transient i
 2020-03-15 15:41:22.366  WARN 5296 --- [http-nio-9009-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Invalid JSON input: Cannot construct instance of `com.rush.model.Customer` (although at least one Creator exists): no int/Int-argument constructor/factory method to deserialize from Number value (1); nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot construct instance of `com.rush.model.Customer` (although at least one Creator exists): no int/Int-argument constructor/factory method to deserialize from Number value (1)
  at [Source: (PushbackInputStream); line: 3, column: 15] (through reference chain: com.rush.model.Order["customer"])]
 2020-03-15 15:44:45.305  INFO 5296 --- [http-nio-9009-exec-3] com.rush.controller.OrderController      : Saving Order
+2020-03-15 16:19:27.028  INFO 5296 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-03-15 16:19:27.060  INFO 5296 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-15 16:19:27.080  INFO 5296 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-03-15 16:19:27.145  INFO 5296 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-03-15 16:19:27.250  INFO 5296 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
