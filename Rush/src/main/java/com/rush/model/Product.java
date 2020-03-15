@@ -60,106 +60,86 @@ public class Product {
 	@JoinColumn(name="product_id")
 	private List<OrderItem> orderItems;
 	
-	
-	@ManyToOne(fetch=FetchType.LAZY)
-	@JoinColumn(name="dessert_category_id")
+	@Column(name="dessert_category")
 	@JsonView(DataView.ProductView.class)
-	private DessertCategory dessertCategory;
+	private String dessertCategory;
 
-
+	//Getters and Setters
 	public Long getProductId() {
 		return productId;
 	}
-
 
 	public void setProductId(Long productId) {
 		this.productId = productId;
 	}
 
-
 	public String getProductName() {
 		return productName;
 	}
-
 
 	public void setProductName(String productName) {
 		this.productName = productName;
 	}
 
-
 	public Integer getProductPrice() {
 		return productPrice;
 	}
-
 
 	public void setProductPrice(Integer productPrice) {
 		this.productPrice = productPrice;
 	}
 
-
 	public String getProductDescription() {
 		return productDescription;
 	}
-
 
 	public void setProductDescription(String productDescription) {
 		this.productDescription = productDescription;
 	}
 
-
 	public String getDietaryRestrictions() {
 		return dietaryRestrictions;
 	}
-
 
 	public void setDietaryRestrictions(String dietaryRestrictions) {
 		this.dietaryRestrictions = dietaryRestrictions;
 	}
 
-
 	public Integer getQuantityRem() {
 		return quantityRem;
 	}
-
 
 	public void setQuantityRem(Integer quantityRem) {
 		this.quantityRem = quantityRem;
 	}
 
-
 	public String getImgUrl() {
 		return imgUrl;
 	}
-
 
 	public void setImgUrl(String imgUrl) {
 		this.imgUrl = imgUrl;
 	}
 
-
 	public List<OrderItem> getOrderItems() {
 		return orderItems;
 	}
-
 
 	public void setOrderItems(List<OrderItem> orderItems) {
 		this.orderItems = orderItems;
 	}
 
-
-	public DessertCategory getDessertCategory() {
+	public String getDessertCategory() {
 		return dessertCategory;
 	}
 
-
-	public void setDessertCategory(DessertCategory dessertCategory) {
+	public void setDessertCategory(String dessertCategory) {
 		this.dessertCategory = dessertCategory;
 	}
 
-
 	public Product(Long productId, String productName, Integer productPrice, String productDescription,
 			String dietaryRestrictions, Integer quantityRem, String imgUrl, List<OrderItem> orderItems,
-			DessertCategory dessertCategory) {
+			String dessertCategory) {
 		super();
 		this.productId = productId;
 		this.productName = productName;
@@ -171,7 +151,6 @@ public class Product {
 		this.orderItems = orderItems;
 		this.dessertCategory = dessertCategory;
 	}
-
 
 	public Product() {
 		super();
@@ -179,12 +158,6 @@ public class Product {
 	}
 
 
-	@Override
-	public String toString() {
-		return "Product [productId=" + productId + ", productName=" + productName + ", productPrice=" + productPrice
-				+ ", productDescription=" + productDescription + ", dietaryRestrictions=" + dietaryRestrictions
-				+ ", quantityRem=" + quantityRem + ", imgUrl=" + imgUrl + ", orderItems=" + orderItems
-				+ ", dessertCategory=" + dessertCategory + "]";
-	}
+	
 
 }
