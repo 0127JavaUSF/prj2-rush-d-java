@@ -19,7 +19,7 @@ import com.rush.model.Order;
 import com.rush.model.OrderItem;
 import com.rush.repos.OrderRepo;
 //http://localhost:4200
-@CrossOrigin(origins="*")
+@CrossOrigin(origins = "http://localhost:4200")
 @RestController
 @RequestMapping("/rush")
 
