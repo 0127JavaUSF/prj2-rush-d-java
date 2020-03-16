@@ -96,6 +96,7 @@ public class Order {
 	public void setOrderItems(List<OrderItem> orderItems) {
 		this.orderItems = orderItems;
 	}
+	
 
 	public Order(Long orderId, Timestamp order_date, Double orderTotal, Customer customer, List<OrderItem> orderItems) {
 		super();
@@ -104,6 +105,13 @@ public class Order {
 		this.orderTotal = orderTotal;
 		this.customer = customer;
 		this.orderItems = orderItems;
+	}
+	
+
+	@Override
+	public String toString() {
+		return "Order [orderId=" + orderId + ", order_date=" + order_date + ", orderTotal=" + orderTotal + ", customer="
+				+ customer + ", orderItems=" + orderItems + "]";
 	}
 
 	public Order() {

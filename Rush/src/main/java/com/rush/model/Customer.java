@@ -50,11 +50,6 @@ public class Customer {
 	@Column(name="exp_date", nullable=false)
 	private String expDate;
 
-//	@OneToMany
-//	@JoinColumn(name="cust_id")
-//	private List<Order> order;
-
-
 	//Getters and Setters
 	public Long getCustId() {
 		return custId;
@@ -148,6 +143,5 @@ public class Customer {
 	}
 
 
-	
 	
 }
