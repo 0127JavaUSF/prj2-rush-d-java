@@ -10,7 +10,7 @@ public class CustomerDto {
 	private String lName;
 	private String password;
 	private String username;
-	private Integer creditCardNumber;
+	private Double creditCardNumber;
 	private Integer cvv;
 	private String cardHolderName;
 	private String expDate;
@@ -47,10 +47,10 @@ public class CustomerDto {
 	public void setUsername(String username) {
 		this.username = username;
 	}
-	public Integer getCreditCardNumber() {
+	public Double getCreditCardNumber() {
 		return creditCardNumber;
 	}
-	public void setCreditCardNumber(Integer creditCardNumber) {
+	public void setCreditCardNumber(Double creditCardNumber) {
 		this.creditCardNumber = creditCardNumber;
 	}
 	public Integer getCvv() {
@@ -78,7 +78,7 @@ public class CustomerDto {
 				+ ", cardHolderName=" + cardHolderName + ", expDate=" + expDate + "]";
 	}
 	public CustomerDto(Long custId, String fName, String lName, String password, String username,
-			Integer creditCardNumber, Integer cvv, String cardHolderName, String expDate) {
+			Double creditCardNumber, Integer cvv, String cardHolderName, String expDate) {
 		super();
 		this.custId = custId;
 		this.fName = fName;

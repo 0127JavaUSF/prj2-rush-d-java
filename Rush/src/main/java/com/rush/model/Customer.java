@@ -39,7 +39,7 @@ public class Customer {
 	private String username;
 	
 	@Column(name="credit_card_number", nullable=false)
-	private Integer creditCardNumber;
+	private Double creditCardNumber;
 	
 	@Column(nullable=false)
 	private Integer cvv;
@@ -96,11 +96,11 @@ public class Customer {
 		this.username = username;
 	}
 
-	public Integer getCreditCardNumber() {
+	public Double getCreditCardNumber() {
 		return creditCardNumber;
 	}
 
-	public void setCreditCardNumber(Integer creditCardNumber) {
+	public void setCreditCardNumber(Double creditCardNumber) {
 		this.creditCardNumber = creditCardNumber;
 	}
 
@@ -128,7 +128,7 @@ public class Customer {
 		this.expDate = expDate;
 	}
 
-	public Customer(Long custId, String fName, String lName, String password, String username, Integer creditCardNumber,
+	public Customer(Long custId, String fName, String lName, String password, String username, Double creditCardNumber,
 			Integer cvv, String cardHolderName, String expDate) {
 		super();
 		this.custId = custId;

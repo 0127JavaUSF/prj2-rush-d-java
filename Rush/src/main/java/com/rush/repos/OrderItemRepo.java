@@ -1,4 +1,4 @@
-package com.rush.controller;
+package com.rush.repos;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

@@ -948,3 +948,250 @@ java.lang.NumberFormatException: Expected time to be colon-separated, got '/'
 2020-03-15 18:10:35.642 ERROR 33400 --- [http-nio-9009-exec-8] com.rush.controller.LoginController      : Fail Seesion Initialization
 2020-03-15 18:10:43.826 ERROR 33400 --- [http-nio-9009-exec-9] com.rush.controller.LoginController      : Fail Seesion Initialization
 2020-03-15 18:10:50.312 ERROR 33400 --- [http-nio-9009-exec-10] com.rush.controller.LoginController      : Fail Seesion Initialization
+2020-03-15 18:12:06.344 ERROR 33400 --- [http-nio-9009-exec-1] com.rush.controller.LoginController      : Fail Seesion Initialization
+2020-03-15 19:14:12.739 ERROR 33400 --- [http-nio-9009-exec-4] com.rush.controller.LoginController      : Fail Seesion Initialization
+2020-03-15 19:14:21.835  INFO 33400 --- [http-nio-9009-exec-6] com.rush.controller.LoginController      : Customer Logged In Successful
+2020-03-15 19:14:21.860  INFO 33400 --- [http-nio-9009-exec-7] com.rush.controller.ProductController    : Retrieve Produ0ct list
+2020-03-15 19:14:24.118  INFO 33400 --- [http-nio-9009-exec-8] com.rush.controller.ProductController    : ProductID 
+2020-03-15 19:14:29.311  INFO 33400 --- [http-nio-9009-exec-9] com.rush.controller.ProductController    : Retrieve Produ0ct list
+2020-03-15 19:20:34.725  INFO 33400 --- [http-nio-9009-exec-5] com.rush.controller.LoginController      : Session Initialization Successful
+2020-03-15 19:20:34.758  INFO 33400 --- [http-nio-9009-exec-6] com.rush.controller.ProductController    : Retrieve Produ0ct list
+2020-03-15 19:20:38.496  INFO 33400 --- [http-nio-9009-exec-7] com.rush.controller.ProductController    : Retrieve Produ0ct list
+2020-03-15 19:20:58.596  INFO 33400 --- [http-nio-9009-exec-1] com.rush.controller.ProductController    : Retrieve Produ0ct list
+2020-03-15 19:21:06.434  INFO 33400 --- [http-nio-9009-exec-3] com.rush.controller.ProductController    : Retrieve Produ0ct list
+2020-03-15 19:21:10.872 ERROR 33400 --- [http-nio-9009-exec-4] com.rush.controller.LoginController      : Fail Seesion Initialization
+2020-03-15 19:21:20.366  INFO 33400 --- [http-nio-9009-exec-5] com.rush.controller.LoginController      : Customer Logged In Successful
+2020-03-15 19:21:20.400  INFO 33400 --- [http-nio-9009-exec-6] com.rush.controller.ProductController    : Retrieve Produ0ct list
+2020-03-15 19:21:31.799  INFO 33400 --- [http-nio-9009-exec-7] com.rush.controller.ProductController    : ProductID 
+2020-03-15 19:21:35.489  INFO 33400 --- [http-nio-9009-exec-8] com.rush.controller.ProductController    : Retrieve Produ0ct list
+2020-03-15 19:21:39.249  INFO 33400 --- [http-nio-9009-exec-9] com.rush.controller.ProductController    : ProductID 
+2020-03-15 19:21:40.829  INFO 33400 --- [http-nio-9009-exec-10] com.rush.controller.ProductController    : Retrieve Produ0ct list
+2020-03-15 19:21:45.261  INFO 33400 --- [http-nio-9009-exec-2] com.rush.controller.ProductController    : ProductID 
+2020-03-15 19:21:48.215  INFO 33400 --- [http-nio-9009-exec-1] com.rush.controller.ProductController    : Retrieve Produ0ct list
+2020-03-15 19:22:12.851  INFO 33400 --- [http-nio-9009-exec-4] com.rush.controller.OrderController      : Saving Order
+2020-03-15 19:22:22.545  INFO 33400 --- [http-nio-9009-exec-6] com.rush.controller.ProductController    : Retrieve Produ0ct list
+2020-03-15 19:25:13.034  INFO 33400 --- [http-nio-9009-exec-4] com.rush.controller.ProductController    : Retrieve Produ0ct list
+2020-03-15 19:26:21.815  INFO 33400 --- [RMI TCP Connection(130)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-03-15 19:26:21.817  INFO 33400 --- [RMI TCP Connection(130)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-15 19:26:21.825  INFO 33400 --- [RMI TCP Connection(130)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-03-15 19:26:21.828  INFO 33400 --- [RMI TCP Connection(130)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-03-15 19:26:21.852  INFO 33400 --- [RMI TCP Connection(130)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-03-15 19:26:28.390  INFO 30964 --- [main] com.rush.RushApplication                 : Starting RushApplication on LAPTOP-LBL0B02E with PID 30964 (C:\Users\kirsa\Documents\workspace-sts-3.9.11.RELEASE\prj2-rush-d-java\Rush\target\classes started by kirsa in C:\Users\kirsa\Documents\workspace-sts-3.9.11.RELEASE\prj2-rush-d-java\Rush)
+2020-03-15 19:26:28.394  INFO 30964 --- [main] com.rush.RushApplication                 : No active profile set, falling back to default profiles: default
+2020-03-15 19:26:29.263  INFO 30964 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-03-15 19:26:29.388  INFO 30964 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 98ms. Found 5 JPA repository interfaces.
+2020-03-15 19:26:29.940  INFO 30964 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9009 (http)
+2020-03-15 19:26:29.944  INFO 30964 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-15 19:26:29.944  INFO 30964 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-15 19:26:30.069  INFO 30964 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-15 19:26:30.069  INFO 30964 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1627 ms
+2020-03-15 19:26:30.215  INFO 30964 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-03-15 19:26:30.306  INFO 30964 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.12.Final}
+2020-03-15 19:26:30.308  INFO 30964 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-03-15 19:26:30.357  INFO 30964 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-03-15 19:26:30.531  INFO 30964 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-15 19:26:34.474  INFO 30964 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-15 19:26:34.498  INFO 30964 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2020-03-15 19:26:44.350  INFO 30964 --- [main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000421: Disabling contextual LOB creation as hibernate.jdbc.lob.non_contextual_creation is true
+2020-03-15 19:26:44.356  INFO 30964 --- [main] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@730f9695
+2020-03-15 19:26:46.768  INFO 30964 --- [main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@3850e90c'
+2020-03-15 19:26:46.774  INFO 30964 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-03-15 19:26:47.224  INFO 30964 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-03-15 19:26:47.462  WARN 30964 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-15 19:26:47.642  INFO 30964 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-15 19:26:47.941  INFO 30964 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9009 (http) with context path ''
+2020-03-15 19:26:47.945  INFO 30964 --- [main] com.rush.RushApplication                 : Started RushApplication in 20.003 seconds (JVM running for 21.042)
+2020-03-15 19:27:20.539  INFO 30964 --- [RMI TCP Connection(9)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-03-15 19:27:20.548  INFO 30964 --- [RMI TCP Connection(9)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-15 19:27:20.551  INFO 30964 --- [RMI TCP Connection(9)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-03-15 19:27:20.555  INFO 30964 --- [RMI TCP Connection(9)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-03-15 19:27:20.586  INFO 30964 --- [RMI TCP Connection(9)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-03-15 19:27:26.954  INFO 3520 --- [main] com.rush.RushApplication                 : Starting RushApplication on LAPTOP-LBL0B02E with PID 3520 (C:\Users\kirsa\Documents\workspace-sts-3.9.11.RELEASE\prj2-rush-d-java\Rush\target\classes started by kirsa in C:\Users\kirsa\Documents\workspace-sts-3.9.11.RELEASE\prj2-rush-d-java\Rush)
+2020-03-15 19:27:26.959  INFO 3520 --- [main] com.rush.RushApplication                 : No active profile set, falling back to default profiles: default
+2020-03-15 19:27:27.725  INFO 3520 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-03-15 19:27:27.861  INFO 3520 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 113ms. Found 5 JPA repository interfaces.
+2020-03-15 19:27:28.422  INFO 3520 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9009 (http)
+2020-03-15 19:27:28.429  INFO 3520 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-15 19:27:28.429  INFO 3520 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-15 19:27:28.531  INFO 3520 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-15 19:27:28.531  INFO 3520 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1529 ms
+2020-03-15 19:27:28.686  INFO 3520 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-03-15 19:27:28.781  INFO 3520 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.12.Final}
+2020-03-15 19:27:28.783  INFO 3520 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-03-15 19:27:28.824  INFO 3520 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-03-15 19:27:28.936  INFO 3520 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-15 19:27:33.645  INFO 3520 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-15 19:27:33.667  INFO 3520 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2020-03-15 19:27:42.486  INFO 3520 --- [main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000421: Disabling contextual LOB creation as hibernate.jdbc.lob.non_contextual_creation is true
+2020-03-15 19:27:42.493  INFO 3520 --- [main] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@6a094db2
+2020-03-15 19:27:45.609  INFO 3520 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-03-15 19:27:46.018  INFO 3520 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-03-15 19:27:46.287  WARN 3520 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-15 19:27:46.443  INFO 3520 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-15 19:27:46.661  INFO 3520 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9009 (http) with context path ''
+2020-03-15 19:27:46.666  INFO 3520 --- [main] com.rush.RushApplication                 : Started RushApplication in 20.143 seconds (JVM running for 21.057)
+2020-03-15 19:28:37.918  INFO 3520 --- [http-nio-9009-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-15 19:28:37.918  INFO 3520 --- [http-nio-9009-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-03-15 19:28:37.926  INFO 3520 --- [http-nio-9009-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2020-03-15 19:28:38.115  WARN 3520 --- [http-nio-9009-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Invalid JSON input: Cannot deserialize value of type `java.lang.Integer` from String "1234456745694125": Overflow: numeric value (1234456745694125) out of range of Integer (-2147483648 - 2147483647); nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.lang.Integer` from String "1234456745694125": Overflow: numeric value (1234456745694125) out of range of Integer (-2147483648 - 2147483647)
+ at [Source: (PushbackInputStream); line: 1, column: 136] (through reference chain: com.rush.model.CustomerDto["creditCardNumber"])]
+2020-03-15 19:29:16.107  WARN 3520 --- [http-nio-9009-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Invalid JSON input: Cannot deserialize value of type `java.lang.Integer` from String "1234567812345678": Overflow: numeric value (1234567812345678) out of range of Integer (-2147483648 - 2147483647); nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.lang.Integer` from String "1234567812345678": Overflow: numeric value (1234567812345678) out of range of Integer (-2147483648 - 2147483647)
+ at [Source: (PushbackInputStream); line: 1, column: 136] (through reference chain: com.rush.model.CustomerDto["creditCardNumber"])]
+2020-03-15 19:30:11.072  WARN 3520 --- [http-nio-9009-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Invalid JSON input: Cannot deserialize value of type `java.lang.Integer` from String "1234567812345678": Overflow: numeric value (1234567812345678) out of range of Integer (-2147483648 - 2147483647); nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.lang.Integer` from String "1234567812345678": Overflow: numeric value (1234567812345678) out of range of Integer (-2147483648 - 2147483647)
+ at [Source: (PushbackInputStream); line: 1, column: 136] (through reference chain: com.rush.model.CustomerDto["creditCardNumber"])]
+2020-03-15 19:31:57.443  INFO 3520 --- [http-nio-9009-exec-6] com.rush.controller.CustomerController   : Creating Customer Profile
+2020-03-15 19:31:58.789  INFO 3520 --- [http-nio-9009-exec-4] com.rush.controller.LoginController      : Session Initialization Successful
+2020-03-15 19:31:58.826  INFO 3520 --- [http-nio-9009-exec-7] com.rush.controller.ProductController    : Retrieve Produ0ct list
+2020-03-15 19:33:33.996  INFO 3520 --- [http-nio-9009-exec-10] com.rush.controller.ProductController    : Retrieve Produ0ct list
+2020-03-15 19:33:41.855 ERROR 3520 --- [http-nio-9009-exec-3] com.rush.controller.LoginController      : Fail Seesion Initialization
+2020-03-15 19:33:56.537  INFO 3520 --- [http-nio-9009-exec-2] com.rush.controller.LoginController      : Customer Logged In Successful
+2020-03-15 19:33:56.580  INFO 3520 --- [http-nio-9009-exec-1] com.rush.controller.ProductController    : Retrieve Produ0ct list
+2020-03-15 19:33:59.729  INFO 3520 --- [http-nio-9009-exec-5] com.rush.controller.ProductController    : ProductID 
+2020-03-15 19:34:01.069  INFO 3520 --- [http-nio-9009-exec-6] com.rush.controller.ProductController    : Retrieve Produ0ct list
+2020-03-15 19:34:03.958  INFO 3520 --- [http-nio-9009-exec-4] com.rush.controller.ProductController    : ProductID 
+2020-03-15 19:34:04.892  INFO 3520 --- [http-nio-9009-exec-7] com.rush.controller.ProductController    : Retrieve Produ0ct list
+2020-03-15 19:34:10.185  INFO 3520 --- [http-nio-9009-exec-8] com.rush.controller.OrderController      : Saving Order
+2020-03-15 19:36:30.120  WARN 3520 --- [http-nio-9009-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Invalid JSON input: Cannot deserialize value of type `java.lang.Integer` from String "1324567812345678": Overflow: numeric value (1324567812345678) out of range of Integer (-2147483648 - 2147483647); nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.lang.Integer` from String "1324567812345678": Overflow: numeric value (1324567812345678) out of range of Integer (-2147483648 - 2147483647)
+ at [Source: (PushbackInputStream); line: 1, column: 136] (through reference chain: com.rush.model.CustomerDto["creditCardNumber"])]
+2020-03-15 19:38:55.455  INFO 3520 --- [RMI TCP Connection(24)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-03-15 19:38:55.459  INFO 3520 --- [RMI TCP Connection(24)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-15 19:38:55.462  INFO 3520 --- [RMI TCP Connection(24)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-03-15 19:38:55.465  INFO 3520 --- [RMI TCP Connection(24)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-03-15 19:38:55.494  INFO 3520 --- [RMI TCP Connection(24)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-03-15 19:39:01.859  INFO 28888 --- [main] com.rush.RushApplication                 : Starting RushApplication on LAPTOP-LBL0B02E with PID 28888 (C:\Users\kirsa\Documents\workspace-sts-3.9.11.RELEASE\prj2-rush-d-java\Rush\target\classes started by kirsa in C:\Users\kirsa\Documents\workspace-sts-3.9.11.RELEASE\prj2-rush-d-java\Rush)
+2020-03-15 19:39:01.862  INFO 28888 --- [main] com.rush.RushApplication                 : No active profile set, falling back to default profiles: default
+2020-03-15 19:39:02.717  INFO 28888 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-03-15 19:39:02.869  INFO 28888 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 126ms. Found 5 JPA repository interfaces.
+2020-03-15 19:39:03.437  INFO 28888 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9009 (http)
+2020-03-15 19:39:03.451  INFO 28888 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-15 19:39:03.451  INFO 28888 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-15 19:39:03.590  INFO 28888 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-15 19:39:03.590  INFO 28888 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1683 ms
+2020-03-15 19:39:03.742  INFO 28888 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-03-15 19:39:03.837  INFO 28888 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.12.Final}
+2020-03-15 19:39:03.839  INFO 28888 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-03-15 19:39:03.872  INFO 28888 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-03-15 19:39:04.008  INFO 28888 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-15 19:39:06.463  INFO 28888 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-15 19:39:06.473  INFO 28888 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2020-03-15 19:39:15.008  INFO 28888 --- [main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000421: Disabling contextual LOB creation as hibernate.jdbc.lob.non_contextual_creation is true
+2020-03-15 19:39:15.016  INFO 28888 --- [main] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@20cece0b
+2020-03-15 19:39:17.807  INFO 28888 --- [main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@4116f66a'
+2020-03-15 19:39:17.811  INFO 28888 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-03-15 19:39:18.208  INFO 28888 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-03-15 19:39:18.455  WARN 28888 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-15 19:39:18.623  INFO 28888 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-15 19:39:18.898  INFO 28888 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9009 (http) with context path ''
+2020-03-15 19:39:18.901  INFO 28888 --- [main] com.rush.RushApplication                 : Started RushApplication in 17.475 seconds (JVM running for 18.39)
+2020-03-15 19:39:34.599  INFO 28888 --- [RMI TCP Connection(6)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-03-15 19:39:34.606  INFO 28888 --- [RMI TCP Connection(6)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-15 19:39:34.610  INFO 28888 --- [RMI TCP Connection(6)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-03-15 19:39:34.613  INFO 28888 --- [RMI TCP Connection(6)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-03-15 19:39:34.643  INFO 28888 --- [RMI TCP Connection(6)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-03-15 19:39:41.132  INFO 2312 --- [main] com.rush.RushApplication                 : Starting RushApplication on LAPTOP-LBL0B02E with PID 2312 (C:\Users\kirsa\Documents\workspace-sts-3.9.11.RELEASE\prj2-rush-d-java\Rush\target\classes started by kirsa in C:\Users\kirsa\Documents\workspace-sts-3.9.11.RELEASE\prj2-rush-d-java\Rush)
+2020-03-15 19:39:41.135  INFO 2312 --- [main] com.rush.RushApplication                 : No active profile set, falling back to default profiles: default
+2020-03-15 19:39:41.878  INFO 2312 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-03-15 19:39:42.015  INFO 2312 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 107ms. Found 5 JPA repository interfaces.
+2020-03-15 19:39:42.578  INFO 2312 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9009 (http)
+2020-03-15 19:39:42.587  INFO 2312 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-15 19:39:42.587  INFO 2312 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-15 19:39:42.683  INFO 2312 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-15 19:39:42.684  INFO 2312 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1505 ms
+2020-03-15 19:39:42.843  INFO 2312 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-03-15 19:39:42.915  INFO 2312 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.12.Final}
+2020-03-15 19:39:42.917  INFO 2312 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-03-15 19:39:42.965  INFO 2312 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-03-15 19:39:43.091  INFO 2312 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-15 19:39:45.595  INFO 2312 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-15 19:39:45.616  INFO 2312 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2020-03-15 19:39:53.398  INFO 2312 --- [main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000421: Disabling contextual LOB creation as hibernate.jdbc.lob.non_contextual_creation is true
+2020-03-15 19:39:53.405  INFO 2312 --- [main] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@7979b8b7
+2020-03-15 19:39:55.803  INFO 2312 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-03-15 19:39:56.149  INFO 2312 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-03-15 19:39:56.428  WARN 2312 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-15 19:39:56.609  INFO 2312 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-15 19:39:56.909  INFO 2312 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9009 (http) with context path ''
+2020-03-15 19:39:56.914  INFO 2312 --- [main] com.rush.RushApplication                 : Started RushApplication in 16.191 seconds (JVM running for 17.202)
+2020-03-15 19:41:39.836  INFO 2312 --- [RMI TCP Connection(12)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-03-15 19:41:39.841  INFO 2312 --- [RMI TCP Connection(12)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-15 19:41:39.851  INFO 2312 --- [RMI TCP Connection(12)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-03-15 19:41:39.854  INFO 2312 --- [RMI TCP Connection(12)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-03-15 19:41:39.882  INFO 2312 --- [RMI TCP Connection(12)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-03-15 19:41:46.436  INFO 32248 --- [main] com.rush.RushApplication                 : Starting RushApplication on LAPTOP-LBL0B02E with PID 32248 (C:\Users\kirsa\Documents\workspace-sts-3.9.11.RELEASE\prj2-rush-d-java\Rush\target\classes started by kirsa in C:\Users\kirsa\Documents\workspace-sts-3.9.11.RELEASE\prj2-rush-d-java\Rush)
+2020-03-15 19:41:46.440  INFO 32248 --- [main] com.rush.RushApplication                 : No active profile set, falling back to default profiles: default
+2020-03-15 19:41:47.200  INFO 32248 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-03-15 19:41:47.342  INFO 32248 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 118ms. Found 5 JPA repository interfaces.
+2020-03-15 19:41:47.900  INFO 32248 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9009 (http)
+2020-03-15 19:41:47.903  INFO 32248 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-15 19:41:47.903  INFO 32248 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-15 19:41:48.050  INFO 32248 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-15 19:41:48.050  INFO 32248 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1561 ms
+2020-03-15 19:41:48.252  INFO 32248 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-03-15 19:41:48.294  INFO 32248 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.12.Final}
+2020-03-15 19:41:48.310  INFO 32248 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-03-15 19:41:48.340  INFO 32248 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-03-15 19:41:48.460  INFO 32248 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-15 19:41:52.180  INFO 32248 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-15 19:41:52.187  INFO 32248 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2020-03-15 19:42:01.252  INFO 32248 --- [main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000421: Disabling contextual LOB creation as hibernate.jdbc.lob.non_contextual_creation is true
+2020-03-15 19:42:01.257  INFO 32248 --- [main] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@49c675f0
+2020-03-15 19:42:03.009  INFO 32248 --- [main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@7f9e8421'
+2020-03-15 19:42:03.016  INFO 32248 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-03-15 19:42:03.349  INFO 32248 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-03-15 19:42:03.576  WARN 32248 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-15 19:42:03.751  INFO 32248 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-15 19:42:04.036  INFO 32248 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9009 (http) with context path ''
+2020-03-15 19:42:04.047  INFO 32248 --- [main] com.rush.RushApplication                 : Started RushApplication in 18.055 seconds (JVM running for 19.064)
+2020-03-15 19:44:48.628  INFO 32248 --- [http-nio-9009-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-15 19:44:48.628  INFO 32248 --- [http-nio-9009-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-03-15 19:44:48.644  INFO 32248 --- [http-nio-9009-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2020-03-15 19:44:48.694  INFO 32248 --- [http-nio-9009-exec-1] com.rush.controller.ProductController    : Retrieve Produ0ct list
+2020-03-15 19:44:56.802  INFO 32248 --- [http-nio-9009-exec-2] com.rush.controller.ProductController    : ProductID 
+2020-03-15 19:44:59.660 ERROR 32248 --- [http-nio-9009-exec-3] com.rush.controller.LoginController      : Fail Seesion Initialization
+2020-03-15 19:45:25.660  INFO 32248 --- [http-nio-9009-exec-4] com.rush.controller.CustomerController   : Creating Customer Profile
+2020-03-15 19:45:26.953 ERROR 32248 --- [http-nio-9009-exec-6] com.rush.controller.LoginController      : Fail Seesion Initialization
+2020-03-15 19:45:49.324  INFO 32248 --- [http-nio-9009-exec-7] com.rush.controller.LoginController      : Customer Logged In Successful
+2020-03-15 19:45:49.377  INFO 32248 --- [http-nio-9009-exec-9] com.rush.controller.ProductController    : Retrieve Produ0ct list
+2020-03-15 19:46:00.756  INFO 32248 --- [http-nio-9009-exec-10] com.rush.controller.ProductController    : Retrieve Produ0ct list
+2020-03-15 19:46:19.128  INFO 32248 --- [http-nio-9009-exec-4] com.rush.controller.ProductController    : ProductID 
+2020-03-15 19:46:21.224  INFO 32248 --- [http-nio-9009-exec-6] com.rush.controller.ProductController    : Retrieve Produ0ct list
+2020-03-15 19:46:26.469  INFO 32248 --- [http-nio-9009-exec-5] com.rush.controller.ProductController    : ProductID 
+2020-03-15 19:46:28.059  INFO 32248 --- [http-nio-9009-exec-7] com.rush.controller.ProductController    : Retrieve Produ0ct list
+2020-03-15 19:46:36.442  INFO 32248 --- [http-nio-9009-exec-9] com.rush.controller.OrderController      : Saving Order
+2020-03-15 19:54:18.193  INFO 32248 --- [http-nio-9009-exec-1] com.rush.controller.ProductController    : Retrieve Produ0ct list
+2020-03-15 19:54:22.571  INFO 32248 --- [http-nio-9009-exec-2] com.rush.controller.ProductController    : ProductID 
+2020-03-15 19:54:27.076  INFO 32248 --- [http-nio-9009-exec-3] com.rush.controller.ProductController    : Retrieve Produ0ct list
+2020-03-15 19:54:58.556  INFO 32248 --- [http-nio-9009-exec-6] com.rush.controller.OrderController      : Saving Order
+2020-03-15 20:06:19.610  INFO 32248 --- [http-nio-9009-exec-7] com.rush.controller.ProductController    : Retrieve Produ0ct list
+2020-03-15 20:06:21.613  INFO 32248 --- [http-nio-9009-exec-9] com.rush.controller.ProductController    : ProductID 
+2020-03-15 20:06:23.546  INFO 32248 --- [http-nio-9009-exec-8] com.rush.controller.ProductController    : Retrieve Produ0ct list
+2020-03-15 20:06:27.870  INFO 32248 --- [http-nio-9009-exec-10] com.rush.controller.LoginController      : Session Initialization Successful
+2020-03-15 20:06:27.916  INFO 32248 --- [http-nio-9009-exec-1] com.rush.controller.ProductController    : Retrieve Produ0ct list
+2020-03-15 20:06:34.584  INFO 32248 --- [http-nio-9009-exec-2] com.rush.controller.OrderController      : Saving Order
+2020-03-15 20:14:03.131  WARN 32248 --- [http-nio-9009-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
+2020-03-15 20:14:06.768 ERROR 32248 --- [http-nio-9009-exec-5] com.rush.controller.LoginController      : Fail Seesion Initialization
+2020-03-15 20:14:13.833  INFO 32248 --- [http-nio-9009-exec-7] com.rush.controller.LoginController      : Customer Logged In Successful
+2020-03-15 20:14:13.867  INFO 32248 --- [http-nio-9009-exec-9] com.rush.controller.ProductController    : Retrieve Produ0ct list
+2020-03-15 20:16:00.561 ERROR 32248 --- [http-nio-9009-exec-1] com.rush.controller.LoginController      : Fail Seesion Initialization
+2020-03-15 20:16:10.916  INFO 32248 --- [http-nio-9009-exec-3] com.rush.controller.LoginController      : Customer Logged In Successful
+2020-03-15 20:16:10.957  INFO 32248 --- [http-nio-9009-exec-4] com.rush.controller.ProductController    : Retrieve Produ0ct list
+2020-03-15 20:16:33.033  INFO 32248 --- [http-nio-9009-exec-9] com.rush.controller.ProductController    : Retrieve Produ0ct list
+2020-03-15 20:16:41.646  INFO 32248 --- [http-nio-9009-exec-5] com.rush.controller.ProductController    : Retrieve Produ0ct list
+2020-03-15 20:16:43.719  INFO 32248 --- [http-nio-9009-exec-7] com.rush.controller.ProductController    : Retrieve Produ0ct list
+2020-03-15 20:16:45.141  INFO 32248 --- [http-nio-9009-exec-9] com.rush.controller.ProductController    : Retrieve Produ0ct list
+2020-03-15 20:16:49.299  INFO 32248 --- [http-nio-9009-exec-10] com.rush.controller.ProductController    : ProductID 
+2020-03-15 20:17:08.742  INFO 32248 --- [http-nio-9009-exec-8] com.rush.controller.LoginController      : Session Initialization Successful
+2020-03-15 20:17:08.788  INFO 32248 --- [http-nio-9009-exec-1] com.rush.controller.ProductController    : Retrieve Produ0ct list
+2020-03-15 20:17:23.832 ERROR 32248 --- [http-nio-9009-exec-2] com.rush.controller.LoginController      : Fail Seesion Initialization
+2020-03-15 20:17:38.912  INFO 32248 --- [http-nio-9009-exec-3] com.rush.controller.LoginController      : Customer Logged In Successful
+2020-03-15 20:17:38.964  INFO 32248 --- [http-nio-9009-exec-4] com.rush.controller.ProductController    : Retrieve Produ0ct list
