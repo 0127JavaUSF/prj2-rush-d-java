@@ -216,3 +216,4 @@
 2020-03-15 20:57:28.846  INFO 14676 --- [http-nio-9009-exec-6] com.rush.controller.ProductController    : ProductID 
 2020-03-15 20:57:34.221  INFO 14676 --- [http-nio-9009-exec-7] com.rush.controller.ProductController    : Retrieve Produ0ct list
 2020-03-15 20:57:36.903  INFO 14676 --- [http-nio-9009-exec-8] com.rush.controller.ProductController    : ProductID 
+2020-03-15 20:57:53.052  INFO 14676 --- [http-nio-9009-exec-9] com.rush.controller.OrderController      : Saving Order
