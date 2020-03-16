@@ -598,3 +598,202 @@ org.hibernate.TransientPropertyValueException: object references an unsaved tran
 2020-03-15 22:07:04.534  INFO 8096 --- [http-nio-9009-exec-2] com.rush.controller.ProductController    : ProductID 
 2020-03-15 22:07:15.760  INFO 8096 --- [http-nio-9009-exec-3] com.rush.controller.ProductController    : ProductID 
 2020-03-15 22:07:31.589  INFO 8096 --- [http-nio-9009-exec-4] com.rush.controller.ProductController    : ProductID 
+2020-03-15 22:08:20.870  INFO 8096 --- [http-nio-9009-exec-5] com.rush.controller.ProductController    : ProductID 
+2020-03-15 22:09:47.392  INFO 8096 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-03-15 22:09:47.395  INFO 8096 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-15 22:09:47.396  INFO 8096 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-03-15 22:09:47.398  INFO 8096 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-03-15 22:09:47.410  INFO 8096 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-03-15 22:20:29.709  INFO 7688 --- [main] com.rush.RushApplication                 : Starting RushApplication on DESKTOP-8EKMIQ1 with PID 7688 (started by aceve in C:\Users\aceve\OneDrive\Desktop\Revature\Projects\Project 2\Spring\prj2-rush-d-java\Rush)
+2020-03-15 22:20:29.711  INFO 7688 --- [main] com.rush.RushApplication                 : No active profile set, falling back to default profiles: default
+2020-03-15 22:20:30.191  INFO 7688 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-03-15 22:20:30.253  INFO 7688 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 56ms. Found 5 JPA repository interfaces.
+2020-03-15 22:20:30.624  INFO 7688 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9009 (http)
+2020-03-15 22:20:30.630  INFO 7688 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-15 22:20:30.630  INFO 7688 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-15 22:20:30.696  INFO 7688 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-15 22:20:30.697  INFO 7688 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 955 ms
+2020-03-15 22:20:30.815  INFO 7688 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-03-15 22:20:30.872  INFO 7688 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.12.Final}
+2020-03-15 22:20:30.873  INFO 7688 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-03-15 22:20:30.905  INFO 7688 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-03-15 22:20:30.990  INFO 7688 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-15 22:20:32.143  INFO 7688 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-15 22:20:32.166  INFO 7688 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2020-03-15 22:20:39.426  INFO 7688 --- [main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000421: Disabling contextual LOB creation as hibernate.jdbc.lob.non_contextual_creation is true
+2020-03-15 22:20:39.437  INFO 7688 --- [main] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@6b2e46af
+2020-03-15 22:20:40.546  INFO 7688 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-03-15 22:20:40.841  INFO 7688 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-03-15 22:20:41.030  WARN 7688 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-15 22:20:41.142  INFO 7688 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-15 22:20:41.302  INFO 7688 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9009 (http) with context path ''
+2020-03-15 22:20:41.304  INFO 7688 --- [main] com.rush.RushApplication                 : Started RushApplication in 11.885 seconds (JVM running for 12.501)
+2020-03-15 22:21:17.851  INFO 7688 --- [http-nio-9009-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-15 22:21:17.852  INFO 7688 --- [http-nio-9009-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-03-15 22:21:17.859  INFO 7688 --- [http-nio-9009-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2020-03-15 22:21:17.929  INFO 7688 --- [http-nio-9009-exec-1] com.rush.controller.LoginController      : Session Initialization Successful
+2020-03-15 22:21:17.964  INFO 7688 --- [http-nio-9009-exec-2] com.rush.controller.ProductController    : Retrieve Produ0ct list
+2020-03-15 22:21:21.987  INFO 7688 --- [http-nio-9009-exec-3] com.rush.controller.ProductController    : ProductID 
+2020-03-15 22:23:06.867  INFO 7688 --- [http-nio-9009-exec-6] com.rush.controller.ProductController    : ProductID 
+2020-03-15 22:23:22.623  INFO 7688 --- [http-nio-9009-exec-7] com.rush.controller.ProductController    : ProductID 
+2020-03-15 22:23:42.268  INFO 7688 --- [http-nio-9009-exec-8] com.rush.controller.ProductController    : ProductID 
+2020-03-15 22:23:55.593  INFO 7688 --- [http-nio-9009-exec-9] com.rush.controller.ProductController    : ProductID 
+2020-03-15 22:24:10.689  INFO 7688 --- [http-nio-9009-exec-10] com.rush.controller.ProductController    : ProductID 
+2020-03-15 22:28:25.798  INFO 7688 --- [http-nio-9009-exec-2] com.rush.controller.ProductController    : Retrieve Produ0ct list
+2020-03-15 22:28:27.517  INFO 7688 --- [http-nio-9009-exec-3] com.rush.controller.ProductController    : ProductID 
+2020-03-15 22:28:30.989  INFO 7688 --- [http-nio-9009-exec-4] com.rush.controller.LoginController      : Session Initialization Successful
+2020-03-15 22:28:31.008  INFO 7688 --- [http-nio-9009-exec-5] com.rush.controller.ProductController    : Retrieve Produ0ct list
+2020-03-15 22:28:34.824  INFO 7688 --- [http-nio-9009-exec-7] com.rush.controller.OrderController      : Saving Order
+2020-03-15 22:28:35.072 ERROR 7688 --- [http-nio-9009-exec-7] o.h.i.ExceptionMapperStandardImpl        : HHH000346: Error during managed flush [org.hibernate.TransientPropertyValueException: object references an unsaved transient instance - save the transient instance before flushing : com.rush.model.Order.customer -> com.rush.model.Customer]
+2020-03-15 22:28:35.151 ERROR 7688 --- [http-nio-9009-exec-7] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessApiUsageException: org.hibernate.TransientPropertyValueException: object references an unsaved transient instance - save the transient instance before flushing : com.rush.model.Order.customer -> com.rush.model.Customer; nested exception is java.lang.IllegalStateException: org.hibernate.TransientPropertyValueException: object references an unsaved transient instance - save the transient instance before flushing : com.rush.model.Order.customer -> com.rush.model.Customer] with root cause
+
+org.hibernate.TransientPropertyValueException: object references an unsaved transient instance - save the transient instance before flushing : com.rush.model.Order.customer -> com.rush.model.Customer
+	at org.hibernate.engine.spi.CascadingActions$8.noCascade(CascadingActions.java:380) ~[hibernate-core-5.2.12.Final.jar:5.2.12.Final]
+	at org.hibernate.engine.internal.Cascade.cascade(Cascade.java:142) ~[hibernate-core-5.2.12.Final.jar:5.2.12.Final]
+	at org.hibernate.event.internal.AbstractFlushingEventListener.cascadeOnFlush(AbstractFlushingEventListener.java:150) ~[hibernate-core-5.2.12.Final.jar:5.2.12.Final]
+	at org.hibernate.event.internal.AbstractFlushingEventListener.prepareEntityFlushes(AbstractFlushingEventListener.java:141) ~[hibernate-core-5.2.12.Final.jar:5.2.12.Final]
+	at org.hibernate.event.internal.AbstractFlushingEventListener.flushEverythingToExecutions(AbstractFlushingEventListener.java:74) ~[hibernate-core-5.2.12.Final.jar:5.2.12.Final]
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:38) ~[hibernate-core-5.2.12.Final.jar:5.2.12.Final]
+	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1437) ~[hibernate-core-5.2.12.Final.jar:5.2.12.Final]
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:493) ~[hibernate-core-5.2.12.Final.jar:5.2.12.Final]
+	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:3207) ~[hibernate-core-5.2.12.Final.jar:5.2.12.Final]
+	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:2413) ~[hibernate-core-5.2.12.Final.jar:5.2.12.Final]
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:473) ~[hibernate-core-5.2.12.Final.jar:5.2.12.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:156) ~[hibernate-core-5.2.12.Final.jar:5.2.12.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.access$100(JdbcResourceLocalTransactionCoordinatorImpl.java:38) ~[hibernate-core-5.2.12.Final.jar:5.2.12.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:231) ~[hibernate-core-5.2.12.Final.jar:5.2.12.Final]
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:68) ~[hibernate-core-5.2.12.Final.jar:5.2.12.Final]
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:534) ~[spring-orm-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:743) ~[spring-tx-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:711) ~[spring-tx-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:631) ~[spring-tx-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:385) ~[spring-tx-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:99) ~[spring-tx-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139) ~[spring-tx-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:178) ~[spring-data-jpa-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95) ~[spring-aop-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212) ~[spring-aop-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at com.sun.proxy.$Proxy109.save(Unknown Source) ~[na:na]
+	at com.rush.controller.OrderController.createOrder(OrderController.java:39) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_241]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_241]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_241]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_241]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1639) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.8.0_241]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.8.0_241]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at java.lang.Thread.run(Unknown Source) [na:1.8.0_241]
+
+2020-03-15 22:28:43.882  WARN 7688 --- [http-nio-9009-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
+2020-03-15 22:29:09.447  WARN 7688 --- [http-nio-9009-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
+2020-03-15 22:29:19.011  INFO 7688 --- [http-nio-9009-exec-10] com.rush.controller.LoginController      : Session Initialization Successful
+2020-03-15 22:29:19.026  INFO 7688 --- [http-nio-9009-exec-1] com.rush.controller.ProductController    : Retrieve Produ0ct list
+2020-03-15 22:29:22.547  INFO 7688 --- [http-nio-9009-exec-2] com.rush.controller.LoginController      : Session Initialization Successful
+2020-03-15 22:29:22.561  INFO 7688 --- [http-nio-9009-exec-3] com.rush.controller.ProductController    : Retrieve Produ0ct list
+2020-03-15 22:29:27.438  INFO 7688 --- [http-nio-9009-exec-4] com.rush.controller.LoginController      : Session Initialization Successful
+2020-03-15 22:29:27.456  INFO 7688 --- [http-nio-9009-exec-5] com.rush.controller.ProductController    : Retrieve Produ0ct list
+2020-03-15 22:29:29.348 ERROR 7688 --- [http-nio-9009-exec-6] com.rush.controller.LoginController      : Fail Seesion Initialization
+2020-03-15 22:29:37.254  INFO 7688 --- [http-nio-9009-exec-8] com.rush.controller.LoginController      : Customer Logged In Successful
+2020-03-15 22:29:37.268  INFO 7688 --- [http-nio-9009-exec-9] com.rush.controller.ProductController    : Retrieve Produ0ct list
+2020-03-15 22:29:41.258  INFO 7688 --- [http-nio-9009-exec-10] com.rush.controller.ProductController    : ProductID 
+2020-03-15 22:29:45.012  INFO 7688 --- [http-nio-9009-exec-1] com.rush.controller.ProductController    : Retrieve Produ0ct list
+2020-03-15 22:29:46.535  INFO 7688 --- [http-nio-9009-exec-2] com.rush.controller.ProductController    : ProductID 
+2020-03-15 22:29:51.252  INFO 7688 --- [http-nio-9009-exec-3] com.rush.controller.OrderController      : Saving Order
+2020-03-15 22:30:41.806 ERROR 7688 --- [http-nio-9009-exec-5] com.rush.controller.LoginController      : Fail Seesion Initialization
+2020-03-15 22:30:47.962 ERROR 7688 --- [http-nio-9009-exec-6] com.rush.controller.LoginController      : Fail Customer Login
+2020-03-15 22:30:49.304 ERROR 7688 --- [http-nio-9009-exec-7] com.rush.controller.LoginController      : Fail Customer Login
+2020-03-15 22:31:39.698  INFO 7688 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-03-15 22:31:39.700  INFO 7688 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-15 22:31:39.701  INFO 7688 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-03-15 22:31:39.702  INFO 7688 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-03-15 22:31:39.712  INFO 7688 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-03-15 23:01:06.753  INFO 24716 --- [main] com.rush.RushApplication                 : Starting RushApplication on DESKTOP-8EKMIQ1 with PID 24716 (started by aceve in C:\Users\aceve\OneDrive\Desktop\Revature\Projects\Project 2\Spring\prj2-rush-d-java\Rush)
+2020-03-15 23:01:06.754  INFO 24716 --- [main] com.rush.RushApplication                 : No active profile set, falling back to default profiles: default
+2020-03-15 23:01:07.266  INFO 24716 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-03-15 23:01:07.335  INFO 24716 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 61ms. Found 5 JPA repository interfaces.
+2020-03-15 23:01:07.914  INFO 24716 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9009 (http)
+2020-03-15 23:01:07.942  INFO 24716 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-15 23:01:07.943  INFO 24716 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-15 23:01:08.134  INFO 24716 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-15 23:01:08.135  INFO 24716 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1353 ms
+2020-03-15 23:01:08.400  INFO 24716 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-03-15 23:01:08.530  INFO 24716 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.12.Final}
+2020-03-15 23:01:08.533  INFO 24716 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-03-15 23:01:08.582  INFO 24716 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-03-15 23:01:08.813  INFO 24716 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-15 23:01:10.826  INFO 24716 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-15 23:01:10.866  INFO 24716 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2020-03-15 23:01:18.344  INFO 24716 --- [main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000421: Disabling contextual LOB creation as hibernate.jdbc.lob.non_contextual_creation is true
+2020-03-15 23:01:18.355  INFO 24716 --- [main] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@1f11f64e
+2020-03-15 23:01:19.953  INFO 24716 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-03-15 23:01:20.587  INFO 24716 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-03-15 23:01:20.948  WARN 24716 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-15 23:01:21.122  INFO 24716 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-15 23:01:21.609  INFO 24716 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9009 (http) with context path ''
+2020-03-15 23:01:21.615  INFO 24716 --- [main] com.rush.RushApplication                 : Started RushApplication in 15.344 seconds (JVM running for 16.993)
+2020-03-15 23:02:04.618  INFO 24716 --- [http-nio-9009-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-15 23:02:04.619  INFO 24716 --- [http-nio-9009-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-03-15 23:02:04.628  INFO 24716 --- [http-nio-9009-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2020-03-15 23:02:04.676  INFO 24716 --- [http-nio-9009-exec-1] com.rush.controller.ProductController    : Retrieve Produ0ct list
+2020-03-15 23:02:18.049  INFO 24716 --- [http-nio-9009-exec-2] com.rush.controller.ProductController    : ProductID 
+2020-03-15 23:02:22.972  INFO 24716 --- [http-nio-9009-exec-3] com.rush.controller.ProductController    : Retrieve Produ0ct list
+2020-03-15 23:03:07.914  INFO 24716 --- [http-nio-9009-exec-4] com.rush.controller.ProductController    : Retrieve Produ0ct list
+2020-03-15 23:03:10.216  INFO 24716 --- [http-nio-9009-exec-5] com.rush.controller.ProductController    : ProductID 
+2020-03-15 23:04:14.176  INFO 24716 --- [http-nio-9009-exec-8] com.rush.controller.CustomerController   : Creating Customer Profile
+2020-03-15 23:04:14.502 ERROR 24716 --- [http-nio-9009-exec-9] com.rush.controller.LoginController      : Fail Seesion Initialization
+2020-03-15 23:04:21.447  INFO 24716 --- [http-nio-9009-exec-1] com.rush.controller.LoginController      : Customer Logged In Successful
+2020-03-15 23:04:21.469  INFO 24716 --- [http-nio-9009-exec-2] com.rush.controller.ProductController    : Retrieve Produ0ct list
+2020-03-15 23:04:40.980  INFO 24716 --- [http-nio-9009-exec-3] com.rush.controller.LoginController      : Session Initialization Successful
+2020-03-15 23:05:25.852  INFO 24716 --- [http-nio-9009-exec-7] com.rush.controller.ProductController    : Retrieve Produ0ct list
+2020-03-15 23:05:25.869  INFO 24716 --- [http-nio-9009-exec-6] com.rush.controller.OrderController      : Saving Order
+2020-03-15 23:05:26.228  INFO 24716 --- [http-nio-9009-exec-8] com.rush.controller.LoginController      : Session Initialization Successful
