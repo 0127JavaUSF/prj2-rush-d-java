@@ -19,7 +19,8 @@ import com.rush.model.Order;
 import com.rush.model.OrderItem;
 import com.rush.repos.OrderRepo;
 //http://localhost:4200
-@CrossOrigin(origins = "http://localhost:4200")
+
+@CrossOrigin(origins = "http://localhost:4200", allowedHeaders = "*", allowCredentials = "true")
 @RestController
 @RequestMapping("/rush")
 
@@ -33,6 +34,8 @@ public class OrderController {
 	@PostMapping("/orders")
 	public Order createOrder(@RequestBody Order order) {
 		logger.info("Saving Order");
+		System.out.println("Contents of the order being submitted" + order.toString());
+		
 		return orderRepo.save(order);
 	}
 	
