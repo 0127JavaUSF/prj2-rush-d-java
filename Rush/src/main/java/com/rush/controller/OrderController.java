@@ -24,6 +24,7 @@ import com.rush.model.OrderItem;
 import com.rush.repos.OrderRepo;
 import com.rush.utils.CustomerJWTUtil;
 //http://localhost:4200
+
 @CrossOrigin(origins = "http://localhost:4200", allowedHeaders = "*", allowCredentials = "true")
 @RestController
 @RequestMapping("/rush")
